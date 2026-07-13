@@ -24,12 +24,12 @@ jobs:
           node-version: "20"
       - name: Validate data integrity
         run: node scripts/validate-data.js
-      - name: Ensure docs are up to date with data
+      - name: Ensure generated docs & knowledge pack are up to date with data
         run: |
           node scripts/generate-docs.js
-          if ! git diff --quiet -- docs; then
-            echo "::error::/docs is out of date. Run 'node scripts/generate-docs.js' and commit the result."
-            git --no-pager diff --stat -- docs
+          if ! git diff --quiet -- docs knowledge/psysdd-knowledge-pack.md; then
+            echo "::error::Generated files are out of date. Run 'node scripts/generate-docs.js' and commit the result."
+            git --no-pager diff --stat -- docs knowledge/psysdd-knowledge-pack.md
             exit 1
           fi
 
