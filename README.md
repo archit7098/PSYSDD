@@ -17,11 +17,14 @@ Built to be shared as a link: a colleague opens it, starts from a presenting sym
 
 Everything is cross-linked: a tree endpoint links to the relevant differential table and to related trees; a table links to each competitor's own table.
 
-## Three ways to use it
+## Four ways to use it
 
 1. **Interactive web app** — open the published site (GitHub Pages) or run locally. Click through the trees, search, and browse tables.
 2. **Markdown docs** — [`/docs`](docs/) renders natively on GitHub, with Mermaid flowcharts for each tree. Good for reading in-repo or offline.
 3. **Structured data** — [`/data`](data/) holds the source of truth as validated JSON. Reuse it in your own tools.
+4. **As a Claude Project** — upload [`knowledge/psysdd-knowledge-pack.md`](knowledge/psysdd-knowledge-pack.md) (the whole framework in one file) and the project instructions in [`knowledge/project-instructions.md`](knowledge/project-instructions.md) to reason through de-identified cases with an assistant. See that file for step-by-step setup.
+
+> ⚠️ Using this with real cases: enter **de-identified** information only, and remember it is decision support, not a diagnosis.
 
 ## Run it locally
 
