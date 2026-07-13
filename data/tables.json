@@ -1,0 +1,875 @@
+[
+  {
+    "id": "3.1.1", "slug": "intellectual-disability", "group": "neurodevelopmental",
+    "title": "Intellectual Disability (Intellectual Developmental Disorder)",
+    "target": "Intellectual Disability",
+    "targetDescription": "Deficits in intellectual and adaptive functioning with onset during the developmental period.",
+    "differentials": [
+      { "disorder": "Major/Mild Neurocognitive Disorder", "distinction": "Involves acquired decline from a previously attained level of functioning, rather than deficits present from the developmental period.", "table": "3.16.2" },
+      { "disorder": "Specific Learning Disorder", "distinction": "Deficits are circumscribed to specific academic skills without global impairment of intellectual and adaptive functioning.", "table": "3.1.5" },
+      { "disorder": "Communication Disorders / Language Disorder", "distinction": "Impairment is limited to communication/language; nonverbal intellectual and adaptive functioning are relatively preserved.", "table": "3.1.2" },
+      { "disorder": "Autism Spectrum Disorder", "distinction": "Defined by social-communication deficits and restricted/repetitive behavior; may co-occur with intellectual disability, in which case both are diagnosed.", "table": "3.1.3" }
+    ]
+  },
+  {
+    "id": "3.1.2", "slug": "communication-disorders", "group": "neurodevelopmental",
+    "title": "Communication Disorders",
+    "target": "Communication Disorders (Language, Speech Sound, Childhood-Onset Fluency, Social Pragmatic)",
+    "targetDescription": "Persistent difficulties in language, speech production, fluency, or the social use of communication.",
+    "differentials": [
+      { "disorder": "Intellectual Disability", "distinction": "Communication problems are part of a broader deficit in intellectual and adaptive functioning rather than a circumscribed language/speech deficit.", "table": "3.1.1" },
+      { "disorder": "Autism Spectrum Disorder", "distinction": "Includes restricted/repetitive behaviors and interests in addition to social-communication deficits; Social (Pragmatic) Communication Disorder is diagnosed only when ASD is excluded.", "table": "3.1.3" },
+      { "disorder": "Hearing or other sensory impairment", "distinction": "Communication difficulty is fully attributable to a sensory deficit and resolves/adapts with appropriate accommodation." },
+      { "disorder": "Selective Mutism", "distinction": "Language capacity is intact but the child fails to speak in specific social situations.", "table": "3.5.2" },
+      { "disorder": "Normal variation", "distinction": "Language/speech is within the expected range for developmental level and cultural/linguistic context." }
+    ]
+  },
+  {
+    "id": "3.1.3", "slug": "autism-spectrum-disorder", "group": "neurodevelopmental",
+    "title": "Autism Spectrum Disorder",
+    "target": "Autism Spectrum Disorder",
+    "targetDescription": "Persistent deficits in social communication/interaction plus restricted, repetitive patterns of behavior, interests, or activities, with onset in the early developmental period.",
+    "differentials": [
+      { "disorder": "Social (Pragmatic) Communication Disorder", "distinction": "Social-communication deficits are present but restricted/repetitive behaviors are absent.", "table": "3.1.2" },
+      { "disorder": "Intellectual Disability", "distinction": "Social communication is commensurate with developmental level; diagnosed additionally when social-communication deficits exceed developmental level.", "table": "3.1.1" },
+      { "disorder": "Attention-Deficit/Hyperactivity Disorder", "distinction": "Attentional/behavioral problems without the qualitative social-communication deficits and restricted interests of ASD (may co-occur).", "table": "3.1.4" },
+      { "disorder": "Selective Mutism", "distinction": "Early development and social communication are typically normal; failure to speak is situation-specific.", "table": "3.5.2" },
+      { "disorder": "Stereotypic Movement Disorder", "distinction": "Stereotypies occur without the social-communication deficits of ASD." },
+      { "disorder": "Schizophrenia (childhood onset)", "distinction": "Includes a period of delusions/hallucinations and follows a prodrome; ASD lacks positive psychotic symptoms.", "table": "3.2.1" }
+    ]
+  },
+  {
+    "id": "3.1.4", "slug": "adhd", "group": "neurodevelopmental",
+    "title": "Attention-Deficit/Hyperactivity Disorder",
+    "target": "Attention-Deficit/Hyperactivity Disorder",
+    "targetDescription": "Persistent inattention and/or hyperactivity-impulsivity, onset before age 12, present in ≥2 settings and impairing functioning.",
+    "differentials": [
+      { "disorder": "Oppositional Defiant Disorder", "distinction": "Resistance to tasks reflects opposition to authority rather than an inability to sustain attention.", "table": "3.14.1" },
+      { "disorder": "Specific Learning Disorder", "distinction": "Inattentive appearance is limited to academically demanding tasks and stems from skill deficits.", "table": "3.1.5" },
+      { "disorder": "Intellectual Disability", "distinction": "Symptoms are commensurate with mental age; ADHD diagnosed additionally if inattention/hyperactivity exceed developmental level.", "table": "3.1.1" },
+      { "disorder": "Bipolar Disorder", "distinction": "Inattention/overactivity is episodic and accompanied by mood elevation, whereas ADHD is chronic and non-episodic.", "table": "3.3.1" },
+      { "disorder": "Disruptive Mood Dysregulation Disorder", "distinction": "Characterized by persistent irritability and severe temper outbursts beyond the impulsivity of ADHD.", "table": "3.4.4" },
+      { "disorder": "Anxiety Disorders", "distinction": "Inattention is due to worry/rumination rather than distractibility by external stimuli.", "table": "3.5.7" },
+      { "disorder": "Substance Use Disorders", "distinction": "Inattention began with substance use rather than in childhood.", "table": "3.15.1" }
+    ]
+  },
+  {
+    "id": "3.1.5", "slug": "specific-learning-disorder", "group": "neurodevelopmental",
+    "title": "Specific Learning Disorder",
+    "target": "Specific Learning Disorder",
+    "targetDescription": "Persistent difficulties learning and using academic skills (reading, writing, or mathematics) below expectation for age, not explained by other conditions.",
+    "differentials": [
+      { "disorder": "Intellectual Disability", "distinction": "Academic difficulties are part of global intellectual and adaptive impairment.", "table": "3.1.1" },
+      { "disorder": "Normal academic variation / lack of instruction", "distinction": "Underperformance is due to inadequate instruction, absence, or environmental factors rather than a learning disorder." },
+      { "disorder": "Neurocognitive Disorder", "distinction": "Represents a decline from previously attained academic skills rather than a developmental difficulty acquiring them.", "table": "3.16.2" },
+      { "disorder": "ADHD", "distinction": "Poor academic performance stems from inattention; may co-occur with specific learning disorder.", "table": "3.1.4" },
+      { "disorder": "Sensory impairment (vision/hearing)", "distinction": "Learning difficulty is attributable to an uncorrected sensory deficit." }
+    ]
+  },
+  {
+    "id": "3.1.6", "slug": "tic-disorders", "group": "neurodevelopmental",
+    "title": "Tic Disorders",
+    "target": "Tic Disorders (Tourette's, Persistent Motor/Vocal, Provisional)",
+    "targetDescription": "Sudden, rapid, recurrent, nonrhythmic motor movements and/or vocalizations with onset before age 18.",
+    "differentials": [
+      { "disorder": "Other movement disorders (chorea, dystonia, myoclonus)", "distinction": "Movements are rhythmic or sustained and not suppressible/preceded by a premonitory urge as tics are." },
+      { "disorder": "Substance/medication-induced movements", "distinction": "Abnormal movements are temporally related to a substance or medication (e.g., stimulants, neuroleptics)." },
+      { "disorder": "Obsessive-Compulsive Disorder", "distinction": "Compulsions are goal-directed and preceded by an obsession, whereas complex tics are less purposeful.", "table": "3.6.1" },
+      { "disorder": "Stereotypic Movement Disorder", "distinction": "Movements are rhythmic, fixed, and driven rather than the brief, variable, suppressible pattern of tics." },
+      { "disorder": "Movements due to another medical condition", "distinction": "Abnormal movements are attributable to a neurological condition (e.g., Huntington's, postviral)." }
+    ]
+  },
+  {
+    "id": "3.2.1", "slug": "schizophrenia", "group": "psychotic",
+    "title": "Schizophrenia or Schizophreniform Disorder",
+    "target": "Schizophrenia / Schizophreniform Disorder",
+    "targetDescription": "Two or more active-phase symptoms (delusions, hallucinations, disorganized speech, grossly disorganized/catatonic behavior, negative symptoms) with functional decline; ≥6 months for schizophrenia, 1–6 months for schizophreniform.",
+    "differentials": [
+      { "disorder": "Schizoaffective Disorder", "distinction": "A mood episode is present for the majority of the total illness duration, with ≥2 weeks of psychosis without prominent mood symptoms.", "table": "3.2.2" },
+      { "disorder": "Bipolar/Depressive Disorder With Psychotic Features", "distinction": "Psychotic symptoms occur exclusively during mood episodes.", "table": "3.4.1" },
+      { "disorder": "Delusional Disorder", "distinction": "Delusions occur without the other active-phase symptoms and functioning is otherwise relatively preserved.", "table": "3.2.3" },
+      { "disorder": "Brief Psychotic Disorder", "distinction": "Duration is at least 1 day but less than 1 month with return to premorbid functioning.", "table": "3.2.4" },
+      { "disorder": "Substance/Medication-Induced Psychotic Disorder", "distinction": "Psychosis is attributable to a substance and typically remits with sustained abstinence." },
+      { "disorder": "Psychotic Disorder Due to Another Medical Condition", "distinction": "Psychosis is the direct physiological consequence of a medical condition." },
+      { "disorder": "Autism Spectrum Disorder", "distinction": "Prominent delusions/hallucinations are absent; social-communication deficits date from early development.", "table": "3.1.3" },
+      { "disorder": "Schizotypal Personality Disorder", "distinction": "Attenuated, subthreshold psychotic-like features without frank psychosis.", "table": "3.17.3" }
+    ]
+  },
+  {
+    "id": "3.2.2", "slug": "schizoaffective-disorder", "group": "psychotic",
+    "title": "Schizoaffective Disorder",
+    "target": "Schizoaffective Disorder",
+    "targetDescription": "An uninterrupted illness with a major mood episode concurrent with active-phase schizophrenia symptoms, plus ≥2 weeks of delusions/hallucinations without a major mood episode, with mood episodes present for the majority of the illness.",
+    "differentials": [
+      { "disorder": "Schizophrenia", "distinction": "Mood episodes, if present, occupy only a minority of the total active and residual illness.", "table": "3.2.1" },
+      { "disorder": "Major Depressive/Bipolar Disorder With Psychotic Features", "distinction": "Psychotic symptoms occur exclusively during mood episodes (no ≥2-week period of psychosis without mood symptoms).", "table": "3.4.1" },
+      { "disorder": "Substance/Medication-Induced Psychotic Disorder", "distinction": "The combined mood and psychotic picture is attributable to a substance." },
+      { "disorder": "Psychotic Disorder Due to Another Medical Condition", "distinction": "Symptoms are the physiological consequence of a medical condition." }
+    ]
+  },
+  {
+    "id": "3.2.3", "slug": "delusional-disorder", "group": "psychotic",
+    "title": "Delusional Disorder",
+    "target": "Delusional Disorder",
+    "targetDescription": "One or more delusions for ≥1 month without other active-phase schizophrenia symptoms and with relatively preserved functioning apart from the delusion's impact.",
+    "differentials": [
+      { "disorder": "Schizophrenia", "distinction": "Prominent hallucinations, disorganized speech, or negative symptoms are present in addition to delusions.", "table": "3.2.1" },
+      { "disorder": "Obsessive-Compulsive Disorder (with absent insight)", "distinction": "Beliefs are tied to obsessions/compulsions and were once recognized as excessive.", "table": "3.6.1" },
+      { "disorder": "Body Dysmorphic Disorder (with absent insight)", "distinction": "The fixed belief concerns a perceived appearance defect.", "table": "3.6.2" },
+      { "disorder": "Depressive/Bipolar Disorder With Psychotic Features", "distinction": "Delusions occur only during mood episodes.", "table": "3.4.1" },
+      { "disorder": "Paranoid Personality Disorder", "distinction": "Pervasive suspiciousness without a fixed, circumscribed delusion.", "table": "3.17.1" },
+      { "disorder": "Substance-Induced or Medical psychotic disorder", "distinction": "Delusions are attributable to a substance or medical condition." }
+    ]
+  },
+  {
+    "id": "3.2.4", "slug": "brief-psychotic-disorder", "group": "psychotic",
+    "title": "Brief Psychotic Disorder",
+    "target": "Brief Psychotic Disorder",
+    "targetDescription": "Sudden onset of ≥1 positive psychotic symptom lasting at least 1 day but less than 1 month, with eventual full return to premorbid functioning.",
+    "differentials": [
+      { "disorder": "Schizophreniform Disorder / Schizophrenia", "distinction": "Symptoms persist for 1 month or longer.", "table": "3.2.1" },
+      { "disorder": "Mood Disorder With Psychotic Features", "distinction": "Psychosis occurs in the context of a manic or major depressive episode.", "table": "3.4.1" },
+      { "disorder": "Substance/Medication-Induced Psychotic Disorder", "distinction": "Psychosis is attributable to substance intoxication/withdrawal or medication." },
+      { "disorder": "Psychotic Disorder Due to Another Medical Condition", "distinction": "Psychosis is the physiological consequence of a medical condition (including delirium)." },
+      { "disorder": "Personality Disorders (e.g., borderline, schizotypal)", "distinction": "Transient stress-related paranoia/dissociation without a discrete psychotic episode.", "table": "3.17.5" }
+    ]
+  },
+  {
+    "id": "3.2.5", "slug": "catatonia", "group": "psychotic",
+    "title": "Unspecified Catatonia",
+    "target": "Catatonia",
+    "targetDescription": "A syndrome of psychomotor disturbance (stupor, catalepsy, mutism, negativism, posturing, echophenomena, agitation) occurring in association with another disorder or medical condition.",
+    "differentials": [
+      { "disorder": "Catatonia Associated With a Mental Disorder", "distinction": "Occurs during a psychotic, bipolar, or depressive disorder and is specified as such rather than 'unspecified.'" },
+      { "disorder": "Catatonic Disorder Due to Another Medical Condition", "distinction": "Directly caused by a medical condition." },
+      { "disorder": "Neuroleptic Malignant Syndrome", "distinction": "Medication-induced hyperthermia, rigidity, and autonomic instability requiring urgent medical management." },
+      { "disorder": "Parkinsonism / other movement disorders", "distinction": "Motor findings are explained by a defined neurological movement disorder rather than catatonia." }
+    ]
+  },
+  {
+    "id": "3.3.1", "slug": "bipolar-i", "group": "bipolar",
+    "title": "Bipolar I Disorder",
+    "target": "Bipolar I Disorder",
+    "targetDescription": "At least one Manic Episode (≥1 week or hospitalization, with marked impairment or psychosis), usually with major depressive episodes.",
+    "differentials": [
+      { "disorder": "Bipolar II Disorder", "distinction": "Hypomanic (not full manic) episodes plus major depressive episodes; never a full manic episode.", "table": "3.3.2" },
+      { "disorder": "Major Depressive Disorder", "distinction": "No lifetime history of a manic or hypomanic episode.", "table": "3.4.1" },
+      { "disorder": "Cyclothymic Disorder", "distinction": "Chronic subthreshold hypomanic and depressive symptoms that never meet full episode criteria.", "table": "3.3.3" },
+      { "disorder": "Schizoaffective Disorder", "distinction": "≥2 weeks of psychosis occur without a mood episode.", "table": "3.2.2" },
+      { "disorder": "Substance/Medication-Induced Bipolar Disorder", "distinction": "Mood elevation is attributable to a substance/medication and does not persist beyond its physiological effect." },
+      { "disorder": "Bipolar Disorder Due to Another Medical Condition", "distinction": "Mania is the direct physiological consequence of a medical condition." },
+      { "disorder": "ADHD", "distinction": "Chronic, non-episodic overactivity/impulsivity without discrete mood episodes (may co-occur, especially in youth).", "table": "3.1.4" },
+      { "disorder": "Borderline Personality Disorder", "distinction": "Mood shifts are rapid, reactive to interpersonal events, and lack sustained episodes with increased energy/decreased sleep.", "table": "3.17.5" }
+    ]
+  },
+  {
+    "id": "3.3.2", "slug": "bipolar-ii", "group": "bipolar",
+    "title": "Bipolar II Disorder",
+    "target": "Bipolar II Disorder",
+    "targetDescription": "At least one Hypomanic Episode and at least one Major Depressive Episode, with no history of a full Manic Episode.",
+    "differentials": [
+      { "disorder": "Bipolar I Disorder", "distinction": "A full manic episode has occurred at some point.", "table": "3.3.1" },
+      { "disorder": "Major Depressive Disorder", "distinction": "No lifetime hypomanic episode.", "table": "3.4.1" },
+      { "disorder": "Cyclothymic Disorder", "distinction": "Symptoms never reach full hypomanic or major depressive episode thresholds.", "table": "3.3.3" },
+      { "disorder": "Borderline Personality Disorder", "distinction": "Affective instability is brief and reactive rather than sustained hypomanic episodes.", "table": "3.17.5" },
+      { "disorder": "Substance/Medication-Induced Bipolar Disorder", "distinction": "Hypomania is attributable to a substance and does not persist with abstinence." }
+    ]
+  },
+  {
+    "id": "3.3.3", "slug": "cyclothymic-disorder", "group": "bipolar",
+    "title": "Cyclothymic Disorder",
+    "target": "Cyclothymic Disorder",
+    "targetDescription": "≥2 years (1 year in youth) of numerous periods of hypomanic and depressive symptoms that never meet full episode criteria, present at least half the time.",
+    "differentials": [
+      { "disorder": "Bipolar I/II Disorder", "distinction": "Full manic, hypomanic, or major depressive episodes have occurred.", "table": "3.3.1" },
+      { "disorder": "Bipolar Disorder, rapid cycling", "distinction": "Discrete full episodes recur frequently, unlike the chronic subthreshold fluctuation of cyclothymia." },
+      { "disorder": "Borderline Personality Disorder", "distinction": "Mood instability is reactive and tied to interpersonal stressors and identity disturbance.", "table": "3.17.5" },
+      { "disorder": "Substance/Medication-Induced or Medical mood disorder", "distinction": "Mood fluctuations are attributable to a substance or medical condition." }
+    ]
+  },
+  {
+    "id": "3.4.1", "slug": "major-depressive-disorder", "group": "depressive",
+    "title": "Major Depressive Disorder",
+    "target": "Major Depressive Disorder",
+    "targetDescription": "One or more Major Depressive Episodes (≥2 weeks of depressed mood/anhedonia plus additional symptoms) without a history of mania/hypomania.",
+    "differentials": [
+      { "disorder": "Bipolar I/II Disorder", "distinction": "A lifetime manic or hypomanic episode has occurred.", "table": "3.3.1" },
+      { "disorder": "Persistent Depressive Disorder", "distinction": "Chronic depressed mood for ≥2 years, often at lower symptom intensity.", "table": "3.4.2" },
+      { "disorder": "Adjustment Disorder With Depressed Mood", "distinction": "Depressive symptoms follow a stressor and do not meet full major depressive episode criteria.", "table": "3.7.2" },
+      { "disorder": "Depressive Disorder Due to Another Medical Condition", "distinction": "Depression is the direct physiological result of a medical condition." },
+      { "disorder": "Substance/Medication-Induced Depressive Disorder", "distinction": "Depression is attributable to a substance/medication." },
+      { "disorder": "Schizoaffective Disorder", "distinction": "Psychosis occurs for ≥2 weeks outside of mood episodes.", "table": "3.2.2" },
+      { "disorder": "Uncomplicated bereavement / normal sadness", "distinction": "A normative reaction to loss that does not reflect an internal dysfunction (clinical judgment required)." },
+      { "disorder": "ADHD / Demoralization", "distinction": "Poor concentration or low mood is secondary to functional impairment without a full depressive syndrome.", "table": "3.1.4" }
+    ]
+  },
+  {
+    "id": "3.4.2", "slug": "persistent-depressive-disorder", "group": "depressive",
+    "title": "Persistent Depressive Disorder (Dysthymia)",
+    "target": "Persistent Depressive Disorder",
+    "targetDescription": "Depressed mood most of the day, more days than not, for ≥2 years (≥1 year in youth), with additional depressive symptoms and no symptom-free interval longer than 2 months.",
+    "differentials": [
+      { "disorder": "Major Depressive Disorder", "distinction": "Episodic rather than chronic; MDD and persistent depressive disorder may be diagnosed together when criteria for both are met.", "table": "3.4.1" },
+      { "disorder": "Bipolar Disorders / Cyclothymic Disorder", "distinction": "History of hypomanic/manic symptoms.", "table": "3.3.3" },
+      { "disorder": "Psychotic disorders (residual)", "distinction": "Chronic low mood occurs within a primary psychotic illness.", "table": "3.2.1" },
+      { "disorder": "Depressive Disorder Due to Another Medical Condition / Substance-Induced", "distinction": "Chronic depression is attributable to a medical condition or substance." },
+      { "disorder": "Personality Disorders", "distinction": "Enduring maladaptive traits without pervasive depressed mood (may co-occur)." }
+    ]
+  },
+  {
+    "id": "3.4.3", "slug": "premenstrual-dysphoric-disorder", "group": "depressive",
+    "title": "Premenstrual Dysphoric Disorder",
+    "target": "Premenstrual Dysphoric Disorder",
+    "targetDescription": "Mood and physical symptoms in the final premenstrual week that improve within a few days of menses onset, confirmed by prospective ratings.",
+    "differentials": [
+      { "disorder": "Premenstrual exacerbation of another disorder", "distinction": "An underlying disorder (e.g., MDD) is present throughout the cycle and merely worsens premenstrually." },
+      { "disorder": "Dysmenorrhea", "distinction": "Painful menses without the characteristic mood symptom cluster." },
+      { "disorder": "Major Depressive Disorder / Persistent Depressive Disorder", "distinction": "Mood symptoms are not confined to the luteal phase.", "table": "3.4.1" },
+      { "disorder": "Effects of hormonal treatment", "distinction": "Symptoms are attributable to exogenous hormones." }
+    ]
+  },
+  {
+    "id": "3.4.4", "slug": "disruptive-mood-dysregulation-disorder", "group": "depressive",
+    "title": "Disruptive Mood Dysregulation Disorder",
+    "target": "Disruptive Mood Dysregulation Disorder",
+    "targetDescription": "Severe recurrent temper outbursts with persistently irritable/angry mood between outbursts, onset before age 10, diagnosed between ages 6 and 18.",
+    "differentials": [
+      { "disorder": "Bipolar Disorder", "distinction": "Irritability is episodic with distinct periods of mood elevation/increased energy, not chronic.", "table": "3.3.1" },
+      { "disorder": "Oppositional Defiant Disorder", "distinction": "DMDD requires severe outbursts and persistent inter-outburst irritability; when both sets of criteria are met, only DMDD is diagnosed.", "table": "3.14.1" },
+      { "disorder": "Intermittent Explosive Disorder", "distinction": "Lacks the persistent negative mood between outbursts that characterizes DMDD.", "table": "3.14.2" },
+      { "disorder": "ADHD / Conduct Disorder", "distinction": "May co-occur; distinguished by the chronic irritable mood core of DMDD.", "table": "3.1.4" },
+      { "disorder": "Major Depressive Disorder / Anxiety Disorders", "distinction": "If full criteria for DMDD and MDD are both met, DMDD is not additionally diagnosed.", "table": "3.4.1" }
+    ]
+  },
+  {
+    "id": "3.5.1", "slug": "separation-anxiety-disorder", "group": "anxiety",
+    "title": "Separation Anxiety Disorder",
+    "target": "Separation Anxiety Disorder",
+    "targetDescription": "Developmentally inappropriate, excessive fear/anxiety about separation from attachment figures.",
+    "differentials": [
+      { "disorder": "Generalized Anxiety Disorder", "distinction": "Worry spans many domains rather than focusing on separation.", "table": "3.5.7" },
+      { "disorder": "Panic Disorder / Agoraphobia", "distinction": "Fear centers on panic symptoms or escape difficulty rather than separation from attachment figures.", "table": "3.5.5" },
+      { "disorder": "Social Anxiety Disorder", "distinction": "Avoidance is due to fear of scrutiny, not separation.", "table": "3.5.4" },
+      { "disorder": "Autism Spectrum Disorder", "distinction": "School/social refusal relates to sensory/social intolerance rather than separation fear.", "table": "3.1.3" },
+      { "disorder": "Conduct Disorder / Truancy", "distinction": "School avoidance is to pursue activities outside home rather than to stay near attachment figures.", "table": "3.14.3" },
+      { "disorder": "Illness Anxiety / PTSD", "distinction": "Fear is focused on illness or trauma reminders rather than separation.", "table": "3.7.1" }
+    ]
+  },
+  {
+    "id": "3.5.2", "slug": "selective-mutism", "group": "anxiety",
+    "title": "Selective Mutism",
+    "target": "Selective Mutism",
+    "targetDescription": "Consistent failure to speak in specific social situations where speaking is expected, despite speaking in others, interfering with functioning.",
+    "differentials": [
+      { "disorder": "Communication Disorders", "distinction": "Speech difficulty is not restricted to specific social situations.", "table": "3.1.2" },
+      { "disorder": "Autism Spectrum Disorder", "distinction": "Failure to speak reflects social-communication deficits present across settings.", "table": "3.1.3" },
+      { "disorder": "Social Anxiety Disorder", "distinction": "Broader social fear; selective mutism specifically involves not speaking and may be diagnosed alongside it.", "table": "3.5.4" },
+      { "disorder": "Normal shyness / adjustment (e.g., new language)", "distinction": "Transient silence during adjustment to a new environment or language does not warrant the diagnosis." }
+    ]
+  },
+  {
+    "id": "3.5.3", "slug": "specific-phobia", "group": "anxiety",
+    "title": "Specific Phobia",
+    "target": "Specific Phobia",
+    "targetDescription": "Marked fear/anxiety about a specific object or situation, actively avoided, out of proportion to actual danger.",
+    "differentials": [
+      { "disorder": "Agoraphobia", "distinction": "Fear spans multiple situations centered on escape/help difficulty rather than one circumscribed object.", "table": "3.5.6" },
+      { "disorder": "Social Anxiety Disorder", "distinction": "Fear is of social scrutiny.", "table": "3.5.4" },
+      { "disorder": "Separation Anxiety Disorder", "distinction": "Avoidance relates to separation from attachment figures.", "table": "3.5.1" },
+      { "disorder": "PTSD", "distinction": "Avoidance is of trauma reminders.", "table": "3.7.1" },
+      { "disorder": "Obsessive-Compulsive Disorder", "distinction": "Avoidance is driven by obsessions (e.g., contamination).", "table": "3.6.1" },
+      { "disorder": "Panic Disorder", "distinction": "Panic attacks are unexpected rather than cued only by a specific phobic stimulus.", "table": "3.5.5" }
+    ]
+  },
+  {
+    "id": "3.5.4", "slug": "social-anxiety-disorder", "group": "anxiety",
+    "title": "Social Anxiety Disorder (Social Phobia)",
+    "target": "Social Anxiety Disorder",
+    "targetDescription": "Marked fear/anxiety about social situations involving possible scrutiny, with fear of negative evaluation.",
+    "differentials": [
+      { "disorder": "Panic Disorder", "distinction": "Unexpected panic attacks not limited to social situations.", "table": "3.5.5" },
+      { "disorder": "Agoraphobia", "distinction": "Fear is of escape difficulty/incapacitation rather than scrutiny.", "table": "3.5.6" },
+      { "disorder": "Generalized Anxiety Disorder", "distinction": "Worry extends to nonsocial domains and ongoing relationships.", "table": "3.5.7" },
+      { "disorder": "Separation Anxiety Disorder", "distinction": "Discomfort persists even with attachment figures present in social settings.", "table": "3.5.1" },
+      { "disorder": "Autism Spectrum Disorder", "distinction": "Social-communication deficits with lack of age-appropriate relationships; social anxiety patients retain social capacity.", "table": "3.1.3" },
+      { "disorder": "Body Dysmorphic Disorder", "distinction": "Social avoidance stems from beliefs about appearance flaws.", "table": "3.6.2" },
+      { "disorder": "Avoidant Personality Disorder", "distinction": "Pervasive; frequently overlaps and both may be diagnosed.", "table": "3.17.8" },
+      { "disorder": "Normal performance anxiety / shyness", "distinction": "Not markedly impairing or distressing." }
+    ]
+  },
+  {
+    "id": "3.5.5", "slug": "panic-disorder", "group": "anxiety",
+    "title": "Panic Disorder",
+    "target": "Panic Disorder",
+    "targetDescription": "Recurrent unexpected panic attacks with ≥1 month of concern about further attacks or maladaptive behavior change.",
+    "differentials": [
+      { "disorder": "Other anxiety disorders with cued attacks", "distinction": "Panic attacks are expected (cued by phobic, social, or trauma stimuli) rather than unexpected.", "table": "3.5.4" },
+      { "disorder": "Anxiety Disorder Due to Another Medical Condition", "distinction": "Panic is caused by a medical condition (e.g., arrhythmia, hyperthyroidism, pheochromocytoma)." },
+      { "disorder": "Substance/Medication-Induced Anxiety Disorder", "distinction": "Panic attributable to a substance (e.g., caffeine, stimulants) or withdrawal." },
+      { "disorder": "Illness Anxiety Disorder", "distinction": "Preoccupation with having a serious illness without recurrent unexpected panic.", "table": "3.9.2" },
+      { "disorder": "Agoraphobia", "distinction": "May co-occur; agoraphobia is coded separately when present.", "table": "3.5.6" }
+    ]
+  },
+  {
+    "id": "3.5.6", "slug": "agoraphobia", "group": "anxiety",
+    "title": "Agoraphobia",
+    "target": "Agoraphobia",
+    "targetDescription": "Marked fear/avoidance of ≥2 situations (public transport, open/enclosed spaces, crowds, being outside alone) due to fear that escape or help may be unavailable.",
+    "differentials": [
+      { "disorder": "Specific Phobia, situational", "distinction": "Fear involves a single situation rather than the ≥2 agoraphobic clusters.", "table": "3.5.3" },
+      { "disorder": "Social Anxiety Disorder", "distinction": "Avoidance is due to fear of scrutiny.", "table": "3.5.4" },
+      { "disorder": "Separation Anxiety Disorder", "distinction": "Avoidance relates to separation from attachment figures.", "table": "3.5.1" },
+      { "disorder": "PTSD", "distinction": "Avoidance is of trauma reminders.", "table": "3.7.1" },
+      { "disorder": "Major Depressive Disorder", "distinction": "Reduced going out reflects anhedonia/amotivation rather than fear of escape difficulty.", "table": "3.4.1" }
+    ]
+  },
+  {
+    "id": "3.5.7", "slug": "generalized-anxiety-disorder", "group": "anxiety",
+    "title": "Generalized Anxiety Disorder",
+    "target": "Generalized Anxiety Disorder",
+    "targetDescription": "Excessive, hard-to-control worry about multiple domains, more days than not for ≥6 months, with somatic symptoms.",
+    "differentials": [
+      { "disorder": "Anxiety Disorder Due to Another Medical Condition / Substance-Induced", "distinction": "Anxiety is attributable to a medical condition or substance." },
+      { "disorder": "Social Anxiety / Panic / Specific Phobia", "distinction": "Worry is confined to a specific focus rather than generalized.", "table": "3.5.4" },
+      { "disorder": "Obsessive-Compulsive Disorder", "distinction": "Anxiety is driven by intrusive obsessions rather than realistic-themed worry.", "table": "3.6.1" },
+      { "disorder": "Illness Anxiety Disorder", "distinction": "Worry centers specifically on having a serious illness.", "table": "3.9.2" },
+      { "disorder": "Major Depressive Disorder / Adjustment Disorder", "distinction": "Worry is confined to a depressive episode or a stressor-related adjustment reaction.", "table": "3.4.1" },
+      { "disorder": "Normal worry", "distinction": "Worry is controllable, not markedly distressing, and not accompanied by the somatic symptom burden." }
+    ]
+  },
+  {
+    "id": "3.6.1", "slug": "obsessive-compulsive-disorder", "group": "ocd",
+    "title": "Obsessive-Compulsive Disorder",
+    "target": "Obsessive-Compulsive Disorder",
+    "targetDescription": "Recurrent obsessions and/or compulsions that are time-consuming or cause significant distress/impairment.",
+    "differentials": [
+      { "disorder": "Generalized Anxiety Disorder", "distinction": "Excessive worry about real-life concerns rather than intrusive, ego-dystonic obsessions with rituals.", "table": "3.5.7" },
+      { "disorder": "Body Dysmorphic Disorder", "distinction": "Preoccupations and rituals focus specifically on perceived appearance defects.", "table": "3.6.2" },
+      { "disorder": "Hoarding Disorder", "distinction": "Difficulty discarding driven by perceived need to save, not by obsessions.", "table": "3.6.3" },
+      { "disorder": "Trichotillomania / Excoriation", "distinction": "Body-focused repetitive behaviors without preceding obsessions.", "table": "3.6.4" },
+      { "disorder": "Illness Anxiety Disorder", "distinction": "Preoccupation is specifically about having an illness.", "table": "3.9.2" },
+      { "disorder": "Tic Disorders", "distinction": "Tics are not preceded by an obsession and are less purposeful.", "table": "3.1.6" },
+      { "disorder": "Psychotic disorders", "distinction": "OCD retains at least some insight in most cases; delusional disorder involves fixed non-ritualized beliefs.", "table": "3.2.1" },
+      { "disorder": "Obsessive-Compulsive Personality Disorder", "distinction": "Pervasive perfectionism/control as ego-syntonic traits without true obsessions/compulsions.", "table": "3.17.10" }
+    ]
+  },
+  {
+    "id": "3.6.2", "slug": "body-dysmorphic-disorder", "group": "ocd",
+    "title": "Body Dysmorphic Disorder",
+    "target": "Body Dysmorphic Disorder",
+    "targetDescription": "Preoccupation with perceived defects/flaws in appearance not observable or slight to others, with repetitive behaviors.",
+    "differentials": [
+      { "disorder": "Normal appearance concerns", "distinction": "Not preoccupying, distressing, or impairing." },
+      { "disorder": "Eating Disorders", "distinction": "Concern is specifically about body weight/shape and eating behavior.", "table": "3.10.2" },
+      { "disorder": "Obsessive-Compulsive Disorder", "distinction": "Obsessions/compulsions are not limited to appearance.", "table": "3.6.1" },
+      { "disorder": "Social Anxiety Disorder", "distinction": "Fear of scrutiny is not based on a specific perceived appearance defect.", "table": "3.5.4" },
+      { "disorder": "Major Depressive Disorder", "distinction": "Appearance-related negative thoughts occur only within a depressive episode.", "table": "3.4.1" },
+      { "disorder": "Illness Anxiety Disorder", "distinction": "Preoccupation is with illness rather than appearance.", "table": "3.9.2" }
+    ]
+  },
+  {
+    "id": "3.6.3", "slug": "hoarding-disorder", "group": "ocd",
+    "title": "Hoarding Disorder",
+    "target": "Hoarding Disorder",
+    "targetDescription": "Persistent difficulty discarding possessions due to a perceived need to save, resulting in clutter that compromises living areas.",
+    "differentials": [
+      { "disorder": "Obsessive-Compulsive Disorder", "distinction": "Accumulation results from obsessions (e.g., contamination) and is unwanted, not driven by a desire to save.", "table": "3.6.1" },
+      { "disorder": "Major Depressive Disorder", "distinction": "Clutter reflects psychomotor slowing/amotivation rather than saving urges.", "table": "3.4.1" },
+      { "disorder": "Neurocognitive Disorder", "distinction": "Accumulation stems from cognitive decline.", "table": "3.16.2" },
+      { "disorder": "Autism Spectrum Disorder / Psychotic disorders", "distinction": "Collecting is tied to restricted interests or delusional beliefs.", "table": "3.1.3" },
+      { "disorder": "Normal collecting", "distinction": "Organized, valued collections without clutter or impairment." }
+    ]
+  },
+  {
+    "id": "3.6.4", "slug": "trichotillomania", "group": "ocd",
+    "title": "Trichotillomania (Hair-Pulling Disorder)",
+    "target": "Trichotillomania",
+    "targetDescription": "Recurrent pulling out of one's hair causing hair loss, with repeated attempts to stop.",
+    "differentials": [
+      { "disorder": "Obsessive-Compulsive Disorder", "distinction": "Hair pulling is not performed in response to an obsession.", "table": "3.6.1" },
+      { "disorder": "Body Dysmorphic Disorder", "distinction": "Hair removal is to correct a perceived appearance defect.", "table": "3.6.2" },
+      { "disorder": "Stereotypic Movement Disorder / Tics", "distinction": "Movements are stereotyped or tic-like rather than focused hair pulling.", "table": "3.1.6" },
+      { "disorder": "Psychotic disorder", "distinction": "Pulling responds to a delusion or hallucination.", "table": "3.2.1" },
+      { "disorder": "Dermatological/medical hair loss", "distinction": "Alopecia is due to a medical condition rather than pulling." }
+    ]
+  },
+  {
+    "id": "3.6.5", "slug": "excoriation-disorder", "group": "ocd",
+    "title": "Excoriation (Skin-Picking) Disorder",
+    "target": "Excoriation Disorder",
+    "targetDescription": "Recurrent skin picking causing lesions, with repeated attempts to stop.",
+    "differentials": [
+      { "disorder": "Obsessive-Compulsive Disorder", "distinction": "Picking is not driven by an obsession.", "table": "3.6.1" },
+      { "disorder": "Body Dysmorphic Disorder", "distinction": "Picking is to improve a perceived appearance defect.", "table": "3.6.2" },
+      { "disorder": "Non-Suicidal Self-Injury", "distinction": "Intent is to relieve negative feelings via self-harm rather than habitual picking." },
+      { "disorder": "Psychotic disorder (e.g., delusional parasitosis)", "distinction": "Picking responds to a delusion of infestation.", "table": "3.2.3" },
+      { "disorder": "Substance-induced (e.g., stimulants)", "distinction": "Picking occurs during stimulant use (formication)." },
+      { "disorder": "Dermatological condition", "distinction": "Skin lesions are due to a primary dermatologic disorder." }
+    ]
+  },
+  {
+    "id": "3.7.1", "slug": "ptsd", "group": "trauma",
+    "title": "Posttraumatic Stress Disorder or Acute Stress Disorder",
+    "target": "PTSD / Acute Stress Disorder",
+    "targetDescription": "Intrusion, avoidance, negative cognition/mood alterations, and arousal following exposure to actual/threatened death, serious injury, or sexual violence (>1 month = PTSD; 3 days–1 month = ASD).",
+    "differentials": [
+      { "disorder": "Adjustment Disorder", "distinction": "Stressor is not of the required traumatic type, or the response does not meet the PTSD symptom pattern.", "table": "3.7.2" },
+      { "disorder": "Anxiety Disorders / OCD", "distinction": "Intrusive thoughts are not tied to a traumatic event.", "table": "3.5.7" },
+      { "disorder": "Major Depressive Disorder", "distinction": "Lacks the intrusion and trauma-related avoidance symptoms.", "table": "3.4.1" },
+      { "disorder": "Dissociative Disorders", "distinction": "Dissociation occurs without the full PTSD symptom picture.", "table": "3.8.2" },
+      { "disorder": "Psychotic Disorders", "distinction": "Flashbacks are trauma-linked reexperiencing, not primary hallucinations/delusions.", "table": "3.2.1" },
+      { "disorder": "Traumatic brain injury", "distinction": "Neurocognitive symptoms are due to the physical injury rather than the psychological trauma." }
+    ]
+  },
+  {
+    "id": "3.7.2", "slug": "adjustment-disorder", "group": "trauma",
+    "title": "Adjustment Disorder",
+    "target": "Adjustment Disorder",
+    "targetDescription": "Clinically significant emotional/behavioral symptoms developing within 3 months of an identifiable stressor, resolving within 6 months of its termination, not meeting criteria for another disorder.",
+    "differentials": [
+      { "disorder": "Major Depressive Disorder / Anxiety Disorders", "distinction": "Full criteria for a specific disorder are met; adjustment disorder is a residual diagnosis.", "table": "3.4.1" },
+      { "disorder": "PTSD / Acute Stress Disorder", "distinction": "The stressor is traumatic and the characteristic symptom pattern is present.", "table": "3.7.1" },
+      { "disorder": "Personality Disorders", "distinction": "Symptoms are enduring traits; adjustment disorder may be diagnosed additionally if a stressor causes acute worsening." },
+      { "disorder": "Normal stress reaction / uncomplicated bereavement", "distinction": "Response is within expectable/culturally normative limits and not markedly impairing." }
+    ]
+  },
+  {
+    "id": "3.8.1", "slug": "dissociative-amnesia", "group": "dissociative",
+    "title": "Dissociative Amnesia",
+    "target": "Dissociative Amnesia",
+    "targetDescription": "Inability to recall important autobiographical information, usually of a traumatic/stressful nature, inconsistent with ordinary forgetting.",
+    "differentials": [
+      { "disorder": "Major/Mild Neurocognitive Disorder", "distinction": "Memory loss is part of a broader cognitive decline with anterograde impairment.", "table": "3.16.2" },
+      { "disorder": "Substance-Induced (e.g., alcohol blackout)", "distinction": "Amnesia is for events during intoxication and attributable to the substance." },
+      { "disorder": "Posttraumatic Stress Disorder", "distinction": "Amnesia is limited to a component of the trauma within the full PTSD picture.", "table": "3.7.1" },
+      { "disorder": "Amnesia due to another medical condition (e.g., seizure, TBI)", "distinction": "Memory loss is the physiological consequence of a medical/neurological event." },
+      { "disorder": "Malingering / Factitious Disorder", "distinction": "Amnesia is feigned for external incentive or to assume the sick role.", "table": "3.9.5" }
+    ]
+  },
+  {
+    "id": "3.8.2", "slug": "depersonalization-derealization", "group": "dissociative",
+    "title": "Depersonalization/Derealization Disorder",
+    "target": "Depersonalization/Derealization Disorder",
+    "targetDescription": "Persistent/recurrent experiences of detachment from one's self (depersonalization) or surroundings (derealization) with intact reality testing.",
+    "differentials": [
+      { "disorder": "Panic Disorder / Anxiety Disorders", "distinction": "Depersonalization occurs only during panic attacks or anxiety episodes.", "table": "3.5.5" },
+      { "disorder": "PTSD / Acute Stress Disorder", "distinction": "Dissociation is part of the trauma-related symptom picture.", "table": "3.7.1" },
+      { "disorder": "Psychotic Disorders", "distinction": "In psychosis, reality testing is lost; here the individual knows the experience is not real.", "table": "3.2.1" },
+      { "disorder": "Substance-Induced / Medical", "distinction": "Symptoms are attributable to a substance (e.g., cannabis, hallucinogens) or medical condition (e.g., seizures)." },
+      { "disorder": "Major Depressive Disorder", "distinction": "Detachment occurs only within a depressive episode.", "table": "3.4.1" }
+    ]
+  },
+  {
+    "id": "3.9.1", "slug": "somatic-symptom-disorder", "group": "somatic",
+    "title": "Somatic Symptom Disorder",
+    "target": "Somatic Symptom Disorder",
+    "targetDescription": "One or more distressing somatic symptoms plus excessive thoughts, feelings, or behaviors related to them.",
+    "differentials": [
+      { "disorder": "Illness Anxiety Disorder", "distinction": "Somatic symptoms are minimal/absent; the focus is fear of having/acquiring illness.", "table": "3.9.2" },
+      { "disorder": "Other medical condition", "distinction": "A medical condition explains the symptoms and the psychological response is proportionate." },
+      { "disorder": "Panic Disorder", "distinction": "Somatic symptoms are episodic and confined to panic attacks.", "table": "3.5.5" },
+      { "disorder": "Generalized Anxiety Disorder", "distinction": "Worry is generalized rather than focused on somatic symptoms.", "table": "3.5.7" },
+      { "disorder": "Conversion Disorder", "distinction": "Symptoms are specifically neurological and incompatible with recognized disease.", "table": "3.9.3" },
+      { "disorder": "Depressive Disorders", "distinction": "Somatic complaints occur only within a depressive episode.", "table": "3.4.1" },
+      { "disorder": "Body Dysmorphic Disorder", "distinction": "Preoccupation is with appearance rather than somatic symptoms.", "table": "3.6.2" }
+    ]
+  },
+  {
+    "id": "3.9.2", "slug": "illness-anxiety-disorder", "group": "somatic",
+    "title": "Illness Anxiety Disorder",
+    "target": "Illness Anxiety Disorder",
+    "targetDescription": "Preoccupation with having/acquiring a serious illness, with minimal somatic symptoms and high health-related anxiety.",
+    "differentials": [
+      { "disorder": "Somatic Symptom Disorder", "distinction": "Prominent distressing somatic symptoms are present.", "table": "3.9.1" },
+      { "disorder": "Generalized Anxiety Disorder", "distinction": "Worry spans many topics, not just illness.", "table": "3.5.7" },
+      { "disorder": "Obsessive-Compulsive Disorder", "distinction": "Illness-related intrusive thoughts are obsessions with associated compulsions across other themes.", "table": "3.6.1" },
+      { "disorder": "Major Depressive Disorder", "distinction": "Health preoccupation occurs only within a depressive episode.", "table": "3.4.1" },
+      { "disorder": "Delusional Disorder, somatic type", "distinction": "The illness belief is held with delusional conviction.", "table": "3.2.3" },
+      { "disorder": "Adjustment reaction to real medical illness", "distinction": "Anxiety is a proportionate response to a genuine, serious diagnosis." }
+    ]
+  },
+  {
+    "id": "3.9.3", "slug": "conversion-disorder", "group": "somatic",
+    "title": "Conversion Disorder (Functional Neurological Symptom Disorder)",
+    "target": "Conversion Disorder",
+    "targetDescription": "Altered voluntary motor or sensory function with clinical findings incompatible with recognized neurological/medical conditions.",
+    "differentials": [
+      { "disorder": "Neurological disease", "distinction": "Examination shows findings compatible with a recognized neurological disorder." },
+      { "disorder": "Somatic Symptom Disorder", "distinction": "Symptoms are not specifically neurological or incompatibility is not demonstrable.", "table": "3.9.1" },
+      { "disorder": "Factitious Disorder / Malingering", "distinction": "Symptoms are intentionally produced (for the sick role or external incentive).", "table": "3.9.5" },
+      { "disorder": "Dissociative Disorders", "distinction": "Symptoms are dissociative (memory/identity) rather than sensorimotor.", "table": "3.8.1" },
+      { "disorder": "Panic Disorder", "distinction": "Neurological-seeming symptoms occur only during panic attacks.", "table": "3.5.5" }
+    ]
+  },
+  {
+    "id": "3.9.4", "slug": "psychological-factors-medical", "group": "somatic",
+    "title": "Psychological Factors Affecting Other Medical Conditions",
+    "target": "Psychological Factors Affecting Other Medical Conditions",
+    "targetDescription": "Psychological/behavioral factors that adversely affect a documented medical condition by influencing its course, treatment, or pathophysiology.",
+    "differentials": [
+      { "disorder": "Mental disorder with a medical cause", "distinction": "There a psychiatric disorder is caused by the medical condition, not psychological factors worsening it." },
+      { "disorder": "Adjustment Disorder", "distinction": "A psychological response to the medical illness that itself meets disorder criteria, rather than factors worsening the illness.", "table": "3.7.2" },
+      { "disorder": "Somatic Symptom Disorder", "distinction": "Excessive thoughts/behaviors about symptoms dominate rather than measurable worsening of a medical condition.", "table": "3.9.1" },
+      { "disorder": "Illness Anxiety Disorder", "distinction": "Health anxiety predominates without a medical condition being worsened.", "table": "3.9.2" }
+    ]
+  },
+  {
+    "id": "3.9.5", "slug": "factitious-disorder", "group": "somatic",
+    "title": "Factitious Disorder",
+    "target": "Factitious Disorder",
+    "targetDescription": "Falsification of physical/psychological signs or symptoms, or induction of injury/disease, in the absence of obvious external rewards.",
+    "differentials": [
+      { "disorder": "Malingering", "distinction": "Feigning is motivated by a tangible external incentive (money, drugs, avoiding duties)." },
+      { "disorder": "Somatic Symptom Disorder", "distinction": "Symptoms are genuinely experienced rather than deliberately falsified.", "table": "3.9.1" },
+      { "disorder": "Conversion Disorder", "distinction": "Symptoms are not intentionally produced.", "table": "3.9.3" },
+      { "disorder": "Borderline Personality Disorder", "distinction": "Self-harm is to relieve distress rather than to deceive and assume the sick role.", "table": "3.17.5" },
+      { "disorder": "Genuine medical condition", "distinction": "Signs are authentic and not induced or falsified." }
+    ]
+  },
+  {
+    "id": "3.10.1", "slug": "arfid", "group": "eating",
+    "title": "Avoidant/Restrictive Food Intake Disorder",
+    "target": "Avoidant/Restrictive Food Intake Disorder",
+    "targetDescription": "Avoidance/restriction of food intake with nutritional/energy or psychosocial consequences, not driven by body-image concerns.",
+    "differentials": [
+      { "disorder": "Anorexia Nervosa", "distinction": "Restriction is driven by fear of weight gain and body-image disturbance.", "table": "3.10.2" },
+      { "disorder": "Medical condition (e.g., GI disease, food allergy)", "distinction": "Restriction is fully accounted for by a medical condition." },
+      { "disorder": "Major Depressive Disorder / Anxiety", "distinction": "Reduced intake is secondary to appetite loss within another disorder.", "table": "3.4.1" },
+      { "disorder": "Autism Spectrum Disorder", "distinction": "Selective eating is part of restricted/sensory features; ARFID diagnosed additionally if severe.", "table": "3.1.3" },
+      { "disorder": "Normal picky eating", "distinction": "Does not cause nutritional deficiency, dependence on supplements, or psychosocial impairment." }
+    ]
+  },
+  {
+    "id": "3.10.2", "slug": "anorexia-nervosa", "group": "eating",
+    "title": "Anorexia Nervosa",
+    "target": "Anorexia Nervosa",
+    "targetDescription": "Restriction of intake leading to significantly low weight, intense fear of weight gain, and disturbance in experience of body weight/shape.",
+    "differentials": [
+      { "disorder": "Bulimia Nervosa", "distinction": "Body weight is maintained at or above normal despite binge-purge cycles.", "table": "3.10.3" },
+      { "disorder": "Avoidant/Restrictive Food Intake Disorder", "distinction": "Low weight without body-image disturbance or fear of weight gain.", "table": "3.10.1" },
+      { "disorder": "Medical causes of low weight", "distinction": "Weight loss is due to a medical illness without the characteristic body-image disturbance." },
+      { "disorder": "Major Depressive Disorder", "distinction": "Weight loss from appetite reduction without fear of weight gain or body-image disturbance.", "table": "3.4.1" },
+      { "disorder": "Body Dysmorphic Disorder", "distinction": "Preoccupation concerns appearance features other than weight/shape.", "table": "3.6.2" },
+      { "disorder": "Psychotic disorders", "distinction": "Food refusal is due to delusions (e.g., of poisoning) rather than weight concern.", "table": "3.2.1" }
+    ]
+  },
+  {
+    "id": "3.10.3", "slug": "bulimia-nervosa", "group": "eating",
+    "title": "Bulimia Nervosa",
+    "target": "Bulimia Nervosa",
+    "targetDescription": "Recurrent binge eating with inappropriate compensatory behaviors, ≥once weekly for 3 months, with self-evaluation unduly influenced by shape/weight.",
+    "differentials": [
+      { "disorder": "Anorexia Nervosa, binge-eating/purging type", "distinction": "The individual is at significantly low weight; anorexia takes precedence.", "table": "3.10.2" },
+      { "disorder": "Binge-Eating Disorder", "distinction": "Binges occur without regular compensatory behaviors.", "table": "3.10.4" },
+      { "disorder": "Major Depressive Disorder with atypical features", "distinction": "Overeating occurs without binge loss-of-control or compensation.", "table": "3.4.1" },
+      { "disorder": "Kleptomania / impulse-control disorders", "distinction": "Impulsivity is not centered on binge eating." },
+      { "disorder": "Medical causes of overeating (e.g., Kleine-Levin)", "distinction": "Hyperphagia is attributable to a neurological/medical syndrome." }
+    ]
+  },
+  {
+    "id": "3.10.4", "slug": "binge-eating-disorder", "group": "eating",
+    "title": "Binge-Eating Disorder",
+    "target": "Binge-Eating Disorder",
+    "targetDescription": "Recurrent binge eating with marked distress, without the regular compensatory behaviors of bulimia nervosa.",
+    "differentials": [
+      { "disorder": "Bulimia Nervosa", "distinction": "Regular inappropriate compensatory behaviors are present.", "table": "3.10.3" },
+      { "disorder": "Obesity (without binge eating)", "distinction": "Overeating occurs without discrete binge episodes with loss of control." },
+      { "disorder": "Major Depressive Disorder", "distinction": "Increased appetite without discrete binges with loss of control.", "table": "3.4.1" },
+      { "disorder": "Bipolar Disorder", "distinction": "Overeating occurs within mood episodes.", "table": "3.3.1" }
+    ]
+  },
+  {
+    "id": "3.11.1", "slug": "insomnia-disorder", "group": "sleep",
+    "title": "Insomnia Disorder",
+    "target": "Insomnia Disorder",
+    "targetDescription": "Dissatisfaction with sleep quantity/quality (difficulty initiating/maintaining sleep or early awakening) ≥3 nights/week for ≥3 months with daytime impairment.",
+    "differentials": [
+      { "disorder": "Normal sleep variation / situational insomnia", "distinction": "Short-lived or does not cause significant daytime impairment." },
+      { "disorder": "Another sleep-wake disorder", "distinction": "Insomnia is explained by a breathing-related, circadian rhythm, or restless legs disorder." },
+      { "disorder": "Substance/Medication-Induced Sleep Disorder", "distinction": "Attributable to a substance, medication, or caffeine." },
+      { "disorder": "Mental disorders (MDD, GAD)", "distinction": "Insomnia is fully accounted for by another disorder; insomnia disorder is added when it is an independent focus.", "table": "3.4.1" },
+      { "disorder": "Sleep disturbance due to another medical condition", "distinction": "Caused by pain, nocturia, or other medical factors." }
+    ]
+  },
+  {
+    "id": "3.11.2", "slug": "hypersomnolence-disorder", "group": "sleep",
+    "title": "Hypersomnolence Disorder",
+    "target": "Hypersomnolence Disorder",
+    "targetDescription": "Excessive sleepiness despite ≥7 hours of sleep, with prolonged sleep, difficulty being fully awake, or nonrestorative sleep, ≥3 times/week for ≥3 months.",
+    "differentials": [
+      { "disorder": "Narcolepsy", "distinction": "Presence of cataplexy, sleep paralysis, hypnagogic hallucinations, and characteristic REM findings." },
+      { "disorder": "Breathing-Related Sleep Disorder", "distinction": "Sleepiness is due to sleep-disordered breathing (e.g., obstructive apnea)." },
+      { "disorder": "Insufficient sleep", "distinction": "Sleepiness resolves with adequate sleep opportunity." },
+      { "disorder": "Substance/Medication-Induced Sleep Disorder", "distinction": "Attributable to sedating substances or medications." },
+      { "disorder": "Major Depressive Disorder with hypersomnia", "distinction": "Excessive sleep occurs only within a depressive episode.", "table": "3.4.1" }
+    ]
+  },
+  {
+    "id": "3.12.1", "slug": "sexual-dysfunctions", "group": "sexual",
+    "title": "Sexual Dysfunctions",
+    "target": "Sexual Dysfunctions",
+    "targetDescription": "Clinically significant disturbance in sexual response or pleasure, typically ≥6 months, causing distress.",
+    "differentials": [
+      { "disorder": "Substance/Medication-Induced Sexual Dysfunction", "distinction": "Dysfunction is attributable to a substance or medication (e.g., SSRIs, antihypertensives)." },
+      { "disorder": "Sexual dysfunction due to another medical condition", "distinction": "Fully explained by a medical condition (vascular, neurologic, endocrine)." },
+      { "disorder": "Another nonsexual mental disorder", "distinction": "Dysfunction is better explained by another disorder (e.g., major depressive disorder).", "table": "3.4.1" },
+      { "disorder": "Severe relationship distress or other stressors", "distinction": "Dysfunction is attributable to relationship problems, partner factors, or contextual stressors." },
+      { "disorder": "Normal variation / inadequate stimulation", "distinction": "Response is within normal limits given age, stimulation, and context, and is not distressing." }
+    ]
+  },
+  {
+    "id": "3.13.1", "slug": "gender-dysphoria", "group": "gender",
+    "title": "Gender Dysphoria",
+    "target": "Gender Dysphoria",
+    "targetDescription": "Marked incongruence between one's experienced/expressed gender and assigned gender, with clinically significant distress or impairment.",
+    "differentials": [
+      { "disorder": "Nonconformity to gender roles", "distinction": "Gender-atypical behavior without the marked incongruence and distress required for the diagnosis." },
+      { "disorder": "Body Dysmorphic Disorder", "distinction": "Preoccupation is with a perceived appearance defect rather than gender incongruence.", "table": "3.6.2" },
+      { "disorder": "Transvestic Disorder", "distinction": "Cross-dressing is for sexual arousal without a desire to be the other gender.", "table": "3.18.1" },
+      { "disorder": "Psychotic disorders", "distinction": "Any belief about being another gender is delusional rather than an identity experience.", "table": "3.2.1" }
+    ]
+  },
+  {
+    "id": "3.14.1", "slug": "oppositional-defiant-disorder", "group": "impulse",
+    "title": "Oppositional Defiant Disorder",
+    "target": "Oppositional Defiant Disorder",
+    "targetDescription": "A pattern of angry/irritable mood, argumentative/defiant behavior, or vindictiveness lasting ≥6 months.",
+    "differentials": [
+      { "disorder": "Conduct Disorder", "distinction": "Involves violation of others' basic rights and major societal norms, beyond defiance.", "table": "3.14.3" },
+      { "disorder": "Disruptive Mood Dysregulation Disorder", "distinction": "Severe temper outbursts plus persistent irritability; when both are met, DMDD is diagnosed instead.", "table": "3.4.4" },
+      { "disorder": "ADHD", "distinction": "Noncompliance stems from inattention/impulsivity rather than deliberate defiance (often co-occurs).", "table": "3.1.4" },
+      { "disorder": "Depressive/Bipolar Disorders", "distinction": "Oppositional behavior occurs only during mood episodes.", "table": "3.4.1" },
+      { "disorder": "Intermittent Explosive Disorder", "distinction": "Characterized by serious aggressive outbursts rather than a broad defiant pattern.", "table": "3.14.2" },
+      { "disorder": "Normal developmental oppositionality", "distinction": "Behavior is within expectable frequency/intensity for developmental stage." }
+    ]
+  },
+  {
+    "id": "3.14.2", "slug": "intermittent-explosive-disorder", "group": "impulse",
+    "title": "Intermittent Explosive Disorder",
+    "target": "Intermittent Explosive Disorder",
+    "targetDescription": "Recurrent impulsive/anger-based aggressive outbursts grossly out of proportion to provocation, not premeditated.",
+    "differentials": [
+      { "disorder": "Conduct Disorder / Antisocial Personality Disorder", "distinction": "Aggression is instrumental/premeditated and part of a broader antisocial pattern.", "table": "3.14.3" },
+      { "disorder": "Disruptive Mood Dysregulation Disorder", "distinction": "Persistent irritable mood between outbursts; DMDD takes precedence in youth when both are met.", "table": "3.4.4" },
+      { "disorder": "Bipolar Disorder", "distinction": "Outbursts occur during manic episodes.", "table": "3.3.1" },
+      { "disorder": "Substance Intoxication/Withdrawal", "distinction": "Aggression occurs in the context of substance use.", "table": "3.15.1" },
+      { "disorder": "Personality Disorders (borderline, antisocial)", "distinction": "Aggression is part of a pervasive personality pattern.", "table": "3.17.5" },
+      { "disorder": "Aggression due to another medical condition", "distinction": "Outbursts are the physiological consequence of a medical condition (e.g., head trauma)." }
+    ]
+  },
+  {
+    "id": "3.14.3", "slug": "conduct-disorder", "group": "impulse",
+    "title": "Conduct Disorder",
+    "target": "Conduct Disorder",
+    "targetDescription": "A repetitive, persistent pattern of behavior violating others' basic rights or major age-appropriate societal norms.",
+    "differentials": [
+      { "disorder": "Oppositional Defiant Disorder", "distinction": "Defiance and irritability without violation of others' basic rights.", "table": "3.14.1" },
+      { "disorder": "Antisocial Personality Disorder", "distinction": "The adult (≥18) continuation; conduct disorder is required before age 15.", "table": "3.17.4" },
+      { "disorder": "ADHD", "distinction": "Impulsive rule-breaking without a sustained pattern of rights violations (often co-occurs).", "table": "3.1.4" },
+      { "disorder": "Bipolar/Depressive Disorders", "distinction": "Antisocial behavior occurs only during mood episodes.", "table": "3.3.1" },
+      { "disorder": "Intermittent Explosive Disorder", "distinction": "Aggression is impulsive outbursts without the broader pattern of nonaggressive conduct violations.", "table": "3.14.2" },
+      { "disorder": "Adjustment Disorder", "distinction": "Conduct disturbance is a time-limited reaction to a stressor.", "table": "3.7.2" }
+    ]
+  },
+  {
+    "id": "3.15.1", "slug": "substance-use-disorders", "group": "substance",
+    "title": "Substance Use Disorders",
+    "target": "Substance Use Disorders",
+    "targetDescription": "A problematic pattern of substance use leading to clinically significant impairment/distress, with impaired control, social impairment, risky use, and pharmacological criteria.",
+    "differentials": [
+      { "disorder": "Nonpathological substance use", "distinction": "Use without impaired control, compulsion, or the required impairment criteria." },
+      { "disorder": "Substance-Induced Mental Disorders", "distinction": "Refers to the psychiatric syndromes caused by the substance rather than the use pattern itself." },
+      { "disorder": "Gambling Disorder", "distinction": "A non-substance (behavioral) addiction sharing features but not involving substance ingestion.", "table": "3.15.2" },
+      { "disorder": "Primary mental disorder with secondary use", "distinction": "Use is self-medication of a primary disorder present during abstinent periods." }
+    ]
+  },
+  {
+    "id": "3.15.2", "slug": "gambling-disorder", "group": "substance",
+    "title": "Gambling Disorder",
+    "target": "Gambling Disorder",
+    "targetDescription": "Persistent, recurrent problematic gambling leading to clinically significant impairment or distress.",
+    "differentials": [
+      { "disorder": "Professional/social gambling", "distinction": "Gambling is disciplined, limited, and not associated with loss of control or impairment." },
+      { "disorder": "Manic Episode", "distinction": "Excessive gambling occurs only during mood elevation.", "table": "3.3.1" },
+      { "disorder": "Antisocial Personality Disorder", "distinction": "Gambling is part of a broader antisocial pattern (may co-occur).", "table": "3.17.4" },
+      { "disorder": "Substance Use Disorders", "distinction": "Shares addictive features but involves substance ingestion.", "table": "3.15.1" }
+    ]
+  },
+  {
+    "id": "3.16.1", "slug": "delirium", "group": "neurocognitive",
+    "title": "Delirium",
+    "target": "Delirium",
+    "targetDescription": "An acute, fluctuating disturbance of attention and awareness with an additional cognitive disturbance, developing over hours to days from a medical cause, substance, or multiple etiologies.",
+    "differentials": [
+      { "disorder": "Major/Mild Neurocognitive Disorder", "distinction": "Chronic, stable cognitive decline with preserved attention/awareness (though delirium can be superimposed).", "table": "3.16.2" },
+      { "disorder": "Psychotic Disorders", "distinction": "Consciousness/attention are intact and onset is not acute-fluctuating.", "table": "3.2.1" },
+      { "disorder": "Acute stress / dissociative states", "distinction": "No global attentional disturbance with a medical/substance cause.", "table": "3.8.2" },
+      { "disorder": "Major Depressive Disorder (with poor concentration)", "distinction": "Attention/awareness are not acutely and globally impaired with fluctuation.", "table": "3.4.1" }
+    ]
+  },
+  {
+    "id": "3.16.2", "slug": "neurocognitive-disorder", "group": "neurocognitive",
+    "title": "Major or Mild Neurocognitive Disorder",
+    "target": "Major/Mild Neurocognitive Disorder",
+    "targetDescription": "Acquired decline from a previous level in ≥1 cognitive domain; major NCD interferes with independence, mild NCD does not.",
+    "differentials": [
+      { "disorder": "Delirium", "distinction": "Acute, fluctuating attentional disturbance rather than a stable decline.", "table": "3.16.1" },
+      { "disorder": "Intellectual Disability", "distinction": "Deficits are developmental and lifelong, not an acquired decline.", "table": "3.1.1" },
+      { "disorder": "Major Depressive Disorder (pseudodementia)", "distinction": "Cognitive complaints improve with treatment of the depressive episode.", "table": "3.4.1" },
+      { "disorder": "Normal aging", "distinction": "Age-expected cognitive change without significant decline or impairment." },
+      { "disorder": "Substance/Medication-Induced Neurocognitive Disorder", "distinction": "Decline is attributable to a substance/medication." },
+      { "disorder": "Schizophrenia", "distinction": "Cognitive impairment occurs within a primary psychotic illness.", "table": "3.2.1" }
+    ]
+  },
+  {
+    "id": "3.17.1", "slug": "paranoid-personality-disorder", "group": "personality",
+    "title": "Paranoid Personality Disorder",
+    "target": "Paranoid Personality Disorder",
+    "targetDescription": "Pervasive distrust and suspiciousness such that others' motives are interpreted as malevolent, beginning by early adulthood.",
+    "differentials": [
+      { "disorder": "Delusional Disorder, persecutory type", "distinction": "Involves fixed delusions rather than pervasive but non-delusional suspiciousness.", "table": "3.2.3" },
+      { "disorder": "Schizophrenia", "distinction": "Includes frank psychotic symptoms.", "table": "3.2.1" },
+      { "disorder": "Schizotypal Personality Disorder", "distinction": "Adds cognitive-perceptual distortions and eccentricity.", "table": "3.17.3" },
+      { "disorder": "Schizoid Personality Disorder", "distinction": "Detachment without prominent suspiciousness.", "table": "3.17.2" },
+      { "disorder": "Personality change due to another medical condition / substance-related", "distinction": "Suspiciousness is attributable to a medical condition or substance.", "table": "3.17.11" }
+    ]
+  },
+  {
+    "id": "3.17.2", "slug": "schizoid-personality-disorder", "group": "personality",
+    "title": "Schizoid Personality Disorder",
+    "target": "Schizoid Personality Disorder",
+    "targetDescription": "Pervasive detachment from social relationships and a restricted range of emotional expression.",
+    "differentials": [
+      { "disorder": "Schizotypal Personality Disorder", "distinction": "Adds cognitive-perceptual distortions and eccentric behavior.", "table": "3.17.3" },
+      { "disorder": "Avoidant Personality Disorder", "distinction": "Social withdrawal stems from fear of rejection, with a desire for closeness.", "table": "3.17.8" },
+      { "disorder": "Autism Spectrum Disorder", "distinction": "Includes restricted/repetitive behaviors and early developmental social-communication deficits.", "table": "3.1.3" },
+      { "disorder": "Schizophrenia (residual/negative)", "distinction": "History of active-phase psychotic symptoms.", "table": "3.2.1" },
+      { "disorder": "Major Depressive Disorder", "distinction": "Social withdrawal is episodic and mood-linked.", "table": "3.4.1" }
+    ]
+  },
+  {
+    "id": "3.17.3", "slug": "schizotypal-personality-disorder", "group": "personality",
+    "title": "Schizotypal Personality Disorder",
+    "target": "Schizotypal Personality Disorder",
+    "targetDescription": "Pervasive social/interpersonal deficits with acute discomfort in close relationships, plus cognitive-perceptual distortions and eccentric behavior.",
+    "differentials": [
+      { "disorder": "Schizophrenia / Delusional Disorder", "distinction": "Involves frank, sustained psychotic symptoms rather than attenuated ones.", "table": "3.2.1" },
+      { "disorder": "Schizoid/Paranoid Personality Disorders", "distinction": "Lack the cognitive-perceptual distortions and eccentricity of schizotypal.", "table": "3.17.2" },
+      { "disorder": "Autism Spectrum Disorder", "distinction": "Social deficits stem from early developmental communication impairment and restricted interests.", "table": "3.1.3" },
+      { "disorder": "Psychotic Disorder Due to Substance/Medical", "distinction": "Attenuated psychotic-like features are attributable to a substance or medical condition." }
+    ]
+  },
+  {
+    "id": "3.17.4", "slug": "antisocial-personality-disorder", "group": "personality",
+    "title": "Antisocial Personality Disorder",
+    "target": "Antisocial Personality Disorder",
+    "targetDescription": "A pervasive pattern of disregard for and violation of others' rights since age 15, in an individual ≥18 with evidence of conduct disorder before age 15.",
+    "differentials": [
+      { "disorder": "Conduct Disorder", "distinction": "The youth (<18) precursor; antisocial personality disorder requires age ≥18.", "table": "3.14.3" },
+      { "disorder": "Substance Use Disorders", "distinction": "Antisocial acts occur only in service of substance use, without a lifelong pattern (may co-occur).", "table": "3.15.1" },
+      { "disorder": "Narcissistic Personality Disorder", "distinction": "Exploitation without the impulsivity, aggression, and deceit for personal gain seen in antisocial.", "table": "3.17.7" },
+      { "disorder": "Manic Episode", "distinction": "Irresponsible/antisocial behavior occurs only during mood elevation.", "table": "3.3.1" },
+      { "disorder": "Criminal behavior without personality disorder", "distinction": "Illegal acts occur without the pervasive personality pattern." }
+    ]
+  },
+  {
+    "id": "3.17.5", "slug": "borderline-personality-disorder", "group": "personality",
+    "title": "Borderline Personality Disorder",
+    "target": "Borderline Personality Disorder",
+    "targetDescription": "A pervasive pattern of instability in interpersonal relationships, self-image, and affect, with marked impulsivity.",
+    "differentials": [
+      { "disorder": "Bipolar II / Cyclothymic Disorder", "distinction": "Mood shifts are sustained episodes with increased energy/decreased sleep, versus brief reactive shifts.", "table": "3.3.2" },
+      { "disorder": "Depressive Disorders", "distinction": "Chronic emptiness/instability is a personality trait rather than a discrete episode.", "table": "3.4.1" },
+      { "disorder": "Histrionic Personality Disorder", "distinction": "Attention-seeking without the self-destructiveness, emptiness, and rage of borderline.", "table": "3.17.6" },
+      { "disorder": "Narcissistic Personality Disorder", "distinction": "Self-image is grandiose and stable rather than unstable.", "table": "3.17.7" },
+      { "disorder": "PTSD / Complex trauma", "distinction": "Instability is tied to trauma reexperiencing rather than a pervasive personality pattern.", "table": "3.7.1" },
+      { "disorder": "Substance-Induced changes", "distinction": "Impulsivity/instability occur only during substance use.", "table": "3.15.1" }
+    ]
+  },
+  {
+    "id": "3.17.6", "slug": "histrionic-personality-disorder", "group": "personality",
+    "title": "Histrionic Personality Disorder",
+    "target": "Histrionic Personality Disorder",
+    "targetDescription": "A pervasive pattern of excessive emotionality and attention seeking.",
+    "differentials": [
+      { "disorder": "Borderline Personality Disorder", "distinction": "Adds self-destructiveness, chronic emptiness, and identity disturbance.", "table": "3.17.5" },
+      { "disorder": "Narcissistic Personality Disorder", "distinction": "Attention seeking is to affirm superiority rather than for nurturance.", "table": "3.17.7" },
+      { "disorder": "Dependent Personality Disorder", "distinction": "Reliance on others without the dramatic, seductive attention seeking.", "table": "3.17.9" },
+      { "disorder": "Somatic Symptom Disorder", "distinction": "Focus is on physical symptoms rather than dramatic interpersonal style.", "table": "3.9.1" }
+    ]
+  },
+  {
+    "id": "3.17.7", "slug": "narcissistic-personality-disorder", "group": "personality",
+    "title": "Narcissistic Personality Disorder",
+    "target": "Narcissistic Personality Disorder",
+    "targetDescription": "A pervasive pattern of grandiosity, need for admiration, and lack of empathy.",
+    "differentials": [
+      { "disorder": "Antisocial Personality Disorder", "distinction": "Exploitation is accompanied by impulsivity, aggression, and deceit for material gain.", "table": "3.17.4" },
+      { "disorder": "Histrionic Personality Disorder", "distinction": "Attention seeking is for nurturance rather than to confirm superiority.", "table": "3.17.6" },
+      { "disorder": "Borderline Personality Disorder", "distinction": "Self-image is unstable rather than grandiose.", "table": "3.17.5" },
+      { "disorder": "Manic Episode", "distinction": "Grandiosity is episodic and accompanied by mood/energy change.", "table": "3.3.1" },
+      { "disorder": "Obsessive-Compulsive Personality Disorder", "distinction": "Preoccupation with order/perfectionism rather than admiration and grandiosity.", "table": "3.17.10" }
+    ]
+  },
+  {
+    "id": "3.17.8", "slug": "avoidant-personality-disorder", "group": "personality",
+    "title": "Avoidant Personality Disorder",
+    "target": "Avoidant Personality Disorder",
+    "targetDescription": "A pervasive pattern of social inhibition, feelings of inadequacy, and hypersensitivity to negative evaluation.",
+    "differentials": [
+      { "disorder": "Social Anxiety Disorder", "distinction": "Largely overlapping; both may be diagnosed. Personality disorder is broader and earlier-onset.", "table": "3.5.4" },
+      { "disorder": "Schizoid Personality Disorder", "distinction": "Detachment reflects lack of desire for relationships, not fear of rejection.", "table": "3.17.2" },
+      { "disorder": "Dependent Personality Disorder", "distinction": "Focus is on being cared for rather than on avoiding humiliation.", "table": "3.17.9" },
+      { "disorder": "Agoraphobia", "distinction": "Avoidance is of situations where escape is difficult rather than of social scrutiny.", "table": "3.5.6" }
+    ]
+  },
+  {
+    "id": "3.17.9", "slug": "dependent-personality-disorder", "group": "personality",
+    "title": "Dependent Personality Disorder",
+    "target": "Dependent Personality Disorder",
+    "targetDescription": "A pervasive and excessive need to be taken care of, leading to submissive/clinging behavior and fears of separation.",
+    "differentials": [
+      { "disorder": "Borderline Personality Disorder", "distinction": "Reacts to abandonment with rage/emptiness rather than submission and seeking a new caretaker.", "table": "3.17.5" },
+      { "disorder": "Histrionic Personality Disorder", "distinction": "Uses gregarious, demanding attention seeking rather than submissive dependence.", "table": "3.17.6" },
+      { "disorder": "Avoidant Personality Disorder", "distinction": "Withdraws from relationships until certain of acceptance, rather than clinging.", "table": "3.17.8" },
+      { "disorder": "Dependence due to a medical condition / mood disorder", "distinction": "Dependent behavior is secondary to another disorder." }
+    ]
+  },
+  {
+    "id": "3.17.10", "slug": "ocpd", "group": "personality",
+    "title": "Obsessive-Compulsive Personality Disorder",
+    "target": "Obsessive-Compulsive Personality Disorder",
+    "targetDescription": "A pervasive preoccupation with orderliness, perfectionism, and mental/interpersonal control at the expense of flexibility and efficiency.",
+    "differentials": [
+      { "disorder": "Obsessive-Compulsive Disorder", "distinction": "Presence of true obsessions and compulsions, whereas OCPD involves ego-syntonic traits without them.", "table": "3.6.1" },
+      { "disorder": "Hoarding Disorder", "distinction": "Clinically significant hoarding may warrant a separate diagnosis.", "table": "3.6.3" },
+      { "disorder": "Narcissistic Personality Disorder", "distinction": "Perfectionism serves self-image of superiority rather than orderliness/control for its own sake.", "table": "3.17.7" },
+      { "disorder": "Personality change due to another medical condition", "distinction": "Traits are an acquired change attributable to a medical condition.", "table": "3.17.11" }
+    ]
+  },
+  {
+    "id": "3.17.11", "slug": "personality-change-medical", "group": "personality",
+    "title": "Personality Change Due to Another Medical Condition",
+    "target": "Personality Change Due to Another Medical Condition",
+    "targetDescription": "A persistent personality disturbance representing a change from the individual's previous characteristic pattern, caused by the physiological effects of a medical condition.",
+    "differentials": [
+      { "disorder": "Primary Personality Disorders", "distinction": "Lifelong pattern rather than an acquired change from a medical cause.", "table": "3.17.5" },
+      { "disorder": "Delirium / Neurocognitive Disorder", "distinction": "Personality change occurs within a broader disturbance of consciousness or cognition.", "table": "3.16.1" },
+      { "disorder": "Substance/Medication-Induced changes", "distinction": "Change is attributable to a substance/medication rather than a medical condition." },
+      { "disorder": "Other mental disorders due to a medical condition", "distinction": "Presentation is dominated by mood, psychosis, or anxiety rather than personality change." }
+    ]
+  },
+  {
+    "id": "3.18.1", "slug": "paraphilic-disorders", "group": "paraphilic",
+    "title": "Paraphilic Disorders",
+    "target": "Paraphilic Disorders",
+    "targetDescription": "Recurrent, intense atypical sexual interests causing distress/impairment or entailing harm/risk to others (or nonconsenting persons).",
+    "differentials": [
+      { "disorder": "Nonpathological atypical sexual interest", "distinction": "The interest does not cause distress/impairment or harm to others, so no disorder is diagnosed." },
+      { "disorder": "Manic Episode / Substance Intoxication", "distinction": "Hypersexual or atypical behavior occurs only during mood elevation or intoxication.", "table": "3.3.1" },
+      { "disorder": "Neurocognitive Disorder", "distinction": "Disinhibited sexual behavior results from cognitive decline.", "table": "3.16.2" },
+      { "disorder": "Obsessive-Compulsive Disorder", "distinction": "Sexual intrusive thoughts are ego-dystonic obsessions, not paraphilic arousal.", "table": "3.6.1" },
+      { "disorder": "Conduct Disorder / Antisocial Personality Disorder", "distinction": "Sexual offenses occur within a broader antisocial pattern rather than a specific paraphilic interest.", "table": "3.17.4" }
+    ]
+  }
+]

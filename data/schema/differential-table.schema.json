@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/archit7098/psysdd/data/schema/differential-table.schema.json",
+  "title": "Differential Diagnosis Table",
+  "description": "A head-to-head differential table for a single target disorder: the conditions that share features with it and how each is distinguished.",
+  "type": "object",
+  "required": ["id", "slug", "title", "target", "differentials"],
+  "properties": {
+    "id": { "type": "string", "description": "Chapter reference, e.g. '3.5.4'." },
+    "slug": { "type": "string" },
+    "title": { "type": "string" },
+    "group": { "type": "string", "description": "DSM-5 grouping id from meta.json." },
+    "target": { "type": "string", "description": "The disorder whose differential is described." },
+    "targetDescription": { "type": "string", "description": "Brief original characterization of the target disorder." },
+    "differentials": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["disorder", "distinction"],
+        "properties": {
+          "disorder": { "type": "string", "description": "Competing condition to consider and rule out." },
+          "distinction": { "type": "string", "description": "How this condition is distinguished from the target (original wording)." },
+          "table": { "type": "string", "description": "Cross-reference to the competing disorder's own table id, if present." }
+        }
+      }
+    }
+  }
+}

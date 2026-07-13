@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/archit7098/psysdd/data/schema/decision-tree.schema.json",
+  "title": "Decision Tree",
+  "description": "A symptom-oriented psychiatric differential-diagnosis decision tree. Nodes form a directed graph; each node poses a yes/no decision that either yields diagnostic outcome(s) or advances to another node.",
+  "type": "object",
+  "required": ["id", "slug", "title", "presenting", "start", "nodes"],
+  "properties": {
+    "id": { "type": "string", "description": "Chapter reference, e.g. '2.5'." },
+    "slug": { "type": "string", "description": "URL-safe identifier, e.g. 'delusions'." },
+    "title": { "type": "string" },
+    "presenting": { "type": "string", "description": "The presenting symptom that starts the tree." },
+    "group": { "type": "string", "description": "DSM-5 grouping id from meta.json." },
+    "overview": { "type": "string", "description": "Original explanatory note for the clinician/learner." },
+    "start": { "type": "string", "description": "Node id where traversal begins." },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "question", "yes", "no"],
+        "properties": {
+          "id": { "type": "string" },
+          "question": { "type": "string", "description": "The decision point, phrased so 'yes' advances toward a diagnosis." },
+          "note": { "type": "string", "description": "Optional teaching note shown on expand." },
+          "yes": { "$ref": "#/definitions/branch" },
+          "no": { "$ref": "#/definitions/branch" }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "branch": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["goto"],
+          "properties": { "goto": { "type": "string", "description": "Id of the next node." } }
+        },
+        {
+          "type": "object",
+          "required": ["outcome"],
+          "properties": {
+            "outcome": { "type": "string", "description": "Terminal conclusion label." },
+            "diagnoses": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["name"],
+                "properties": {
+                  "name": { "type": "string" },
+                  "table": { "type": "string", "description": "Differential-table id, e.g. '3.2.1'." },
+                  "seeTree": { "type": "string", "description": "Cross-reference to another tree id." }
+                }
+              }
+            },
+            "kind": { "type": "string", "enum": ["diagnosis", "intermediate", "no-disorder", "refer"], "default": "diagnosis" }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,558 @@
+[
+  {
+    "id": "2.1",
+    "slug": "poor-school-performance",
+    "title": "Poor School Performance",
+    "presenting": "Poor school performance",
+    "group": "neurodevelopmental",
+    "overview": "Poor academic performance is common and nonspecific. Most childhood mental disorders can impair it, and it is frequently the chief complaint — but it is not itself a disorder. Evaluation typically pairs cognitive/achievement testing with a careful history from parents, teachers, and clinicians. Because neurodevelopmental and other disorders often co-occur, traverse the tree more than once and assign every applicable diagnosis.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Are there deficits in intellectual function plus deficits in adaptive functioning, with onset during the developmental period?", "yes": { "outcome": "Intellectual Disability (Intellectual Developmental Disorder)", "diagnoses": [{ "name": "Intellectual Disability", "table": "3.1.1" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Are there deficits in the social use of verbal and nonverbal communication?", "note": "If accompanied by restricted/repetitive behavior and deficits in relationships and social-emotional reciprocity, consider Autism Spectrum Disorder; otherwise Social (Pragmatic) Communication Disorder.", "yes": { "goto": "n2a" }, "no": { "goto": "n3" } },
+      { "id": "n2a", "question": "Are there also restricted, repetitive patterns of behavior/interests and deficits in developing/understanding relationships?", "yes": { "outcome": "Autism Spectrum Disorder", "diagnoses": [{ "name": "Autism Spectrum Disorder", "table": "3.1.3" }] }, "no": { "outcome": "Social (Pragmatic) Communication Disorder", "diagnoses": [{ "name": "Social (Pragmatic) Communication Disorder", "table": "3.1.2" }] } },
+      { "id": "n3", "question": "Is there difficulty learning and using specific academic skills (reading, writing, mathematics)?", "yes": { "outcome": "Specific Learning Disorder", "diagnoses": [{ "name": "Specific Learning Disorder", "table": "3.1.5" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Are there persistent difficulties in the acquisition and use of language?", "yes": { "outcome": "Language Disorder", "diagnoses": [{ "name": "Language Disorder", "table": "3.1.2" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Is there failure to speak in school despite speaking in other settings (e.g., home)?", "yes": { "outcome": "Selective Mutism", "diagnoses": [{ "name": "Selective Mutism", "table": "3.5.2" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Are there symptoms of inattention and/or hyperactivity-impulsivity, onset before age 12, interfering with functioning across settings?", "yes": { "outcome": "Attention-Deficit/Hyperactivity Disorder", "diagnoses": [{ "name": "Attention-Deficit/Hyperactivity Disorder", "table": "3.1.4" }] }, "no": { "goto": "n7" } },
+      { "id": "n7", "question": "Is there a pattern of severe temper outbursts out of proportion to the situation with persistent anger/irritability between outbursts?", "yes": { "outcome": "Disruptive Mood Dysregulation Disorder", "diagnoses": [{ "name": "Disruptive Mood Dysregulation Disorder", "table": "3.4.4" }] }, "no": { "goto": "n8" } },
+      { "id": "n8", "question": "Is there a pattern of antisocial behavior (e.g., truancy, rule violations)?", "yes": { "outcome": "Conduct Disorder", "diagnoses": [{ "name": "Conduct Disorder", "table": "3.14.3" }] }, "no": { "goto": "n9" } },
+      { "id": "n9", "question": "Is there a pattern of negativistic, hostile, and defiant behavior?", "yes": { "outcome": "Oppositional Defiant Disorder", "diagnoses": [{ "name": "Oppositional Defiant Disorder", "table": "3.14.1" }] }, "no": { "goto": "n10" } },
+      { "id": "n10", "question": "Is the poor performance related to excessive substance use?", "yes": { "outcome": "Substance Use Disorder", "diagnoses": [{ "name": "Substance Use Disorder", "table": "3.15.1", "seeTree": "2.26" }] }, "no": { "goto": "n11" } },
+      { "id": "n11", "question": "Is there school refusal based on fear of separation from attachment figures?", "yes": { "outcome": "Separation Anxiety Disorder", "diagnoses": [{ "name": "Separation Anxiety Disorder", "table": "3.5.1" }] }, "no": { "goto": "n12" } },
+      { "id": "n12", "question": "Is another anxiety, mood, or psychotic disorder interfering with school performance?", "yes": { "outcome": "Indicate the specific disorder", "kind": "refer", "diagnoses": [{ "name": "Schizophrenia", "table": "3.2.1" }, { "name": "Major Depressive Disorder", "table": "3.4.1" }] }, "no": { "goto": "n13" } },
+      { "id": "n13", "question": "Is it a maladaptive response to an identifiable psychosocial stressor?", "yes": { "outcome": "Adjustment Disorder", "diagnoses": [{ "name": "Adjustment Disorder", "table": "3.7.2" }] }, "no": { "outcome": "Not attributable to a mental disorder (e.g., poor work habits, disruptive environment, lack of motivation)", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.2",
+    "slug": "behavioral-problems-child-adolescent",
+    "title": "Behavioral Problems in a Child or Adolescent",
+    "presenting": "Behavioral problems in a child or adolescent",
+    "group": "neurodevelopmental",
+    "overview": "Many behavioral problems in youth are not due to a mental disorder — some are subthreshold, some reflect family dysfunction, and some serious acts (e.g., for financial gain) fall outside DSM-5. Early-childhood onset points toward ADHD, ODD, DMDD, ASD, or intellectual disability; adolescent onset raises the role of substances and adolescent-onset conduct disorder, mood disorders, and psychosis.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Are the behaviors associated with substance use (including medication)?", "yes": { "outcome": "Substance-related etiology", "diagnoses": [{ "name": "Substance/Medication-Induced Disorder, Intoxication, or Withdrawal", "seeTree": "2.26" }, { "name": "Substance Use Disorder", "table": "3.15.1" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Are they due to the physiological effects of a general medical condition?", "yes": { "outcome": "Medical etiology", "diagnoses": [{ "name": "Delirium Due to Another Medical Condition", "table": "3.16.1" }, { "name": "Major/Mild Neurocognitive Disorder, with Behavioral Disturbance", "table": "3.16.2" }, { "name": "Personality Change Due to Another Medical Condition", "table": "3.17.11" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Do severe temper outbursts occur that are grossly out of proportion, with persistent anger/irritability between them?", "yes": { "outcome": "Disruptive Mood Dysregulation Disorder", "diagnoses": [{ "name": "Disruptive Mood Dysregulation Disorder", "table": "3.4.4" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Is there a persistent pattern of hyperactivity, impulsivity, and inattention across two or more settings with onset before age 12?", "yes": { "outcome": "Attention-Deficit/Hyperactivity Disorder", "diagnoses": [{ "name": "Attention-Deficit/Hyperactivity Disorder", "table": "3.1.4" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Is there a pattern of argumentativeness, defiance, and vindictiveness beyond developmental norms?", "yes": { "outcome": "Oppositional Defiant Disorder", "diagnoses": [{ "name": "Oppositional Defiant Disorder", "table": "3.14.1" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Do the behaviors occur with intellectual and adaptive deficits with onset in the developmental period?", "yes": { "outcome": "Intellectual Disability", "diagnoses": [{ "name": "Intellectual Disability", "table": "3.1.1" }] }, "no": { "goto": "n7" } },
+      { "id": "n7", "question": "Do they occur with persistent deficits in social communication/interaction plus restricted, repetitive behaviors?", "yes": { "outcome": "Autism Spectrum Disorder", "diagnoses": [{ "name": "Autism Spectrum Disorder", "table": "3.1.3" }] }, "no": { "goto": "n8" } },
+      { "id": "n8", "question": "Are they a consequence of stereotyped, repetitive motor movements?", "yes": { "outcome": "Stereotypic Movement Disorder", "diagnoses": [{ "name": "Stereotypic Movement Disorder" }] }, "no": { "goto": "n9" } },
+      { "id": "n9", "question": "Are they part of a repetitive, persistent pattern of antisocial behavior violating others' rights or major norms?", "yes": { "outcome": "Conduct Disorder", "diagnoses": [{ "name": "Conduct Disorder", "table": "3.14.3" }] }, "no": { "goto": "n10" } },
+      { "id": "n10", "question": "Is there deliberate, purposeful fire setting associated with arousal/fascination?", "yes": { "outcome": "Pyromania", "diagnoses": [{ "name": "Pyromania" }] }, "no": { "goto": "n11" } },
+      { "id": "n11", "question": "Is there recurrent failure to resist impulses to steal objects not needed for use or monetary value?", "yes": { "outcome": "Kleptomania", "diagnoses": [{ "name": "Kleptomania" }] }, "no": { "goto": "n12" } },
+      { "id": "n12", "question": "Are the behaviors associated with periods of elevated, euphoric, or irritable mood plus increased energy?", "yes": { "outcome": "Manic/Hypomanic Episode", "kind": "intermediate", "diagnoses": [{ "name": "Bipolar I Disorder", "table": "3.3.1" }, { "name": "Bipolar II Disorder", "table": "3.3.2" }, { "name": "Cyclothymic Disorder", "table": "3.3.3" }] }, "no": { "goto": "n13" } },
+      { "id": "n13", "question": "Are they associated with episodes of depressed/irritable mood plus other depressive symptoms?", "yes": { "outcome": "Major Depressive Episode", "kind": "intermediate", "diagnoses": [{ "name": "Major Depressive Disorder", "table": "3.4.1" }, { "name": "Persistent Depressive Disorder", "table": "3.4.2" }] }, "no": { "goto": "n14" } },
+      { "id": "n14", "question": "Are they associated with psychotic symptoms?", "yes": { "outcome": "A psychotic disorder is present", "kind": "refer", "diagnoses": [{ "name": "Schizophrenia Spectrum / Other Psychotic Disorder", "table": "3.2.1", "seeTree": "2.5" }] }, "no": { "goto": "n15" } },
+      { "id": "n15", "question": "Do the problems occur as a symptomatic response to a psychosocial stressor of an extremely traumatic nature, with re-experiencing?", "yes": { "outcome": "PTSD or Acute Stress Disorder", "diagnoses": [{ "name": "Posttraumatic Stress Disorder / Acute Stress Disorder", "table": "3.7.1" }] }, "no": { "goto": "n16" } },
+      { "id": "n16", "question": "Are they a maladaptive response to a (non-traumatic) psychosocial stressor?", "yes": { "outcome": "Adjustment Disorder", "diagnoses": [{ "name": "Adjustment Disorder", "table": "3.7.2" }] }, "no": { "goto": "n17" } },
+      { "id": "n17", "question": "Are the problems clinically significant and representative of a psychological/biological dysfunction, but not covered above?", "yes": { "outcome": "Residual category", "diagnoses": [{ "name": "Other Specified / Unspecified Disruptive, Impulse-Control, and Conduct Disorder" }] }, "no": { "goto": "n18" } },
+      { "id": "n18", "question": "Is the behavior illegal behavior for gain or revenge (not a dysfunction in the individual)?", "yes": { "outcome": "Child or Adolescent Antisocial Behavior (V/Z code)", "kind": "no-disorder" }, "no": { "outcome": "Age-appropriate rambunctious behavior — not a mental disorder", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.3",
+    "slug": "speech-disturbance",
+    "title": "Speech Disturbance",
+    "presenting": "Disorganized, impaired, or unusual speech",
+    "group": "neurodevelopmental",
+    "overview": "Covers disorganized speech (derailment, tangentiality), impaired speech production (language, articulation, fluency), and unusual speech (pragmatic deficits, pressured/repetitive speech). Disorganized speech is hard to judge — if you cannot readily tell whether speech is disorganized, it probably is not pathological. Distinguishing loosening of associations (schizophrenia) from flight of ideas (mania) is best based on accompanying symptoms and course rather than the speech pattern alone.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is the speech disturbance associated with a fluctuating disturbance of attention and awareness?", "yes": { "outcome": "Delirium", "diagnoses": [{ "name": "Delirium", "table": "3.16.1" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Is it associated with decline in one or more cognitive domains (attention, executive function, memory, language, perceptual-motor, social cognition)?", "yes": { "outcome": "Major/Mild Neurocognitive Disorder (or aphasia)", "diagnoses": [{ "name": "Major or Mild Neurocognitive Disorder", "table": "3.16.2" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Is it due to the physiological effects of a substance (including medication)?", "yes": { "outcome": "Substance-induced", "diagnoses": [{ "name": "Substance Intoxication/Withdrawal or Substance-Induced Delirium", "seeTree": "2.26" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Is it due to the physiological effects of a general medical condition (e.g., aphasia)?", "yes": { "outcome": "Medical etiology", "diagnoses": [{ "name": "Speech disturbance due to another medical condition (e.g., aphasia)", "seeTree": "2.29" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Is there rapid, pressured speech with racing thoughts, euphoric/irritable mood, and increased energy?", "yes": { "outcome": "Manic/Hypomanic Episode", "kind": "intermediate", "diagnoses": [{ "name": "Bipolar I/II Disorder", "table": "3.3.1", "seeTree": "2.8" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Is speech disorganized (derailment, incoherence) in the context of other psychotic symptoms?", "yes": { "outcome": "Psychotic disorder", "kind": "refer", "diagnoses": [{ "name": "Schizophrenia Spectrum / Other Psychotic Disorder", "table": "3.2.1", "seeTree": "2.5" }] }, "no": { "goto": "n7" } },
+      { "id": "n7", "question": "Are there persistent difficulties in the acquisition and use of language?", "yes": { "outcome": "Language Disorder", "diagnoses": [{ "name": "Language Disorder", "table": "3.1.2" }] }, "no": { "goto": "n8" } },
+      { "id": "n8", "question": "Are there difficulties with speech sound production that reduce intelligibility?", "yes": { "outcome": "Speech Sound Disorder", "diagnoses": [{ "name": "Speech Sound Disorder", "table": "3.1.2" }] }, "no": { "goto": "n9" } },
+      { "id": "n9", "question": "Are there disturbances in fluency and time patterning of speech inappropriate for age?", "yes": { "outcome": "Childhood-Onset Fluency Disorder (Stuttering)", "diagnoses": [{ "name": "Childhood-Onset Fluency Disorder (Stuttering)", "table": "3.1.2" }] }, "no": { "goto": "n10" } },
+      { "id": "n10", "question": "Are there deficits in the social (pragmatic) use of verbal and nonverbal communication?", "yes": { "outcome": "ASD or Social (Pragmatic) Communication Disorder", "diagnoses": [{ "name": "Autism Spectrum Disorder", "table": "3.1.3" }, { "name": "Social (Pragmatic) Communication Disorder", "table": "3.1.2" }] }, "no": { "goto": "n11" } },
+      { "id": "n11", "question": "Are there inappropriate vocal outbursts in the context of otherwise normal speech?", "yes": { "outcome": "Tic Disorder", "diagnoses": [{ "name": "Tic Disorder", "table": "3.1.6" }] }, "no": { "outcome": "Consider residual category or no mental disorder", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.4",
+    "slug": "distractibility",
+    "title": "Distractibility",
+    "presenting": "Distractibility / difficulty sustaining attention",
+    "group": "neurodevelopmental",
+    "overview": "Reduced ability to sustain attention is nonspecific and occurs across many disorders. Rule out substances and medical causes, then distinguish attentional problems that are episodic and mood-linked (mania, depression, anxiety, psychosis) from the persistent, cross-situational, early-onset pattern of ADHD.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is the distractibility due to the physiological effects of a substance (including medication)?", "yes": { "outcome": "Substance-induced", "diagnoses": [{ "name": "Substance Intoxication/Withdrawal or Substance-Induced Disorder", "seeTree": "2.26" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Is it due to the physiological effects of a general medical condition (including delirium)?", "yes": { "outcome": "Medical etiology / Delirium", "diagnoses": [{ "name": "Delirium", "table": "3.16.1" }, { "name": "Neurocognitive Disorder", "table": "3.16.2" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Does it occur only during periods of elevated, expansive, or irritable mood with increased energy?", "yes": { "outcome": "Manic/Hypomanic Episode", "kind": "intermediate", "diagnoses": [{ "name": "Bipolar I/II Disorder", "table": "3.3.1", "seeTree": "2.8" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Does it occur only during a Major Depressive Episode?", "yes": { "outcome": "Major Depressive Episode", "kind": "intermediate", "diagnoses": [{ "name": "Major Depressive Disorder", "table": "3.4.1", "seeTree": "2.10" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Does it occur only in the context of prominent anxiety or worry?", "yes": { "outcome": "An anxiety disorder", "kind": "refer", "diagnoses": [{ "name": "Generalized Anxiety Disorder", "table": "3.5.7", "seeTree": "2.13" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Does it occur only in the context of psychotic symptoms?", "yes": { "outcome": "A psychotic disorder", "kind": "refer", "diagnoses": [{ "name": "Schizophrenia Spectrum / Other Psychotic Disorder", "table": "3.2.1", "seeTree": "2.5" }] }, "no": { "goto": "n7" } },
+      { "id": "n7", "question": "Is there a persistent pattern of inattention and/or hyperactivity-impulsivity, onset before age 12, impairing across settings?", "yes": { "outcome": "Attention-Deficit/Hyperactivity Disorder", "diagnoses": [{ "name": "Attention-Deficit/Hyperactivity Disorder", "table": "3.1.4" }] }, "no": { "goto": "n8" } },
+      { "id": "n8", "question": "Are there persistent deficits in social communication and restricted/repetitive behaviors (ASD)?", "yes": { "outcome": "Autism Spectrum Disorder", "diagnoses": [{ "name": "Autism Spectrum Disorder", "table": "3.1.3" }] }, "no": { "outcome": "Distractibility not attributable to a specific mental disorder (or subthreshold) — consider context", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.5",
+    "slug": "delusions",
+    "title": "Delusions",
+    "presenting": "Delusions (fixed false beliefs)",
+    "group": "psychotic",
+    "overview": "First confirm the belief is a true delusion and not a culturally or religiously sanctioned belief. Then apply the etiologic rule-outs (substance, medical) before differentiating among the primary psychotic and mood disorders. The mood/psychosis relationship — whether delusions are confined to mood episodes, and the proportion of the illness occupied by mood episodes — drives the schizophrenia vs. schizoaffective vs. mood-disorder-with-psychotic-features distinctions.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is the belief a manifestation of a culturally or religiously sanctioned belief system?", "yes": { "outcome": "Not a delusion — no diagnosis on this basis", "kind": "no-disorder" }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Are the delusions due to the physiological effects of a substance (including medication)?", "yes": { "outcome": "Substance/Medication-Induced Psychotic Disorder", "diagnoses": [{ "name": "Substance/Medication-Induced Psychotic Disorder", "seeTree": "2.26" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Are they due to the physiological effects of a general medical condition?", "yes": { "outcome": "Psychotic Disorder Due to Another Medical Condition", "diagnoses": [{ "name": "Psychotic Disorder Due to Another Medical Condition", "seeTree": "2.29" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Do the delusions occur exclusively during episodes of elevated/expansive/irritable mood?", "yes": { "outcome": "Bipolar Disorder, With Psychotic Features", "diagnoses": [{ "name": "Bipolar I/II Disorder, With Psychotic Features", "table": "3.3.1", "seeTree": "2.8" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Do the delusions occur exclusively during Major Depressive Episodes?", "yes": { "outcome": "Depressive Disorder, With Psychotic Features", "diagnoses": [{ "name": "Major Depressive Disorder, With Psychotic Features", "table": "3.4.1", "seeTree": "2.10" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Have the delusions (with other active-phase symptoms) persisted for 6 months or more?", "note": "Duration and the mood relationship separate schizophrenia, schizophreniform, schizoaffective, brief psychotic, and delusional disorder.", "yes": { "goto": "n7" }, "no": { "goto": "n10" } },
+      { "id": "n7", "question": "Are the delusions accompanied by other characteristic psychotic symptoms (hallucinations, disorganized speech, grossly disorganized/catatonic behavior, or negative symptoms)?", "yes": { "goto": "n8" }, "no": { "outcome": "Delusional Disorder", "diagnoses": [{ "name": "Delusional Disorder", "table": "3.2.3" }] } },
+      { "id": "n8", "question": "Is there a history of Major Depressive or Manic Episodes overlapping the active psychotic period?", "yes": { "goto": "n9" }, "no": { "outcome": "Schizophrenia", "diagnoses": [{ "name": "Schizophrenia", "table": "3.2.1" }] } },
+      { "id": "n9", "question": "Have mood episodes been present for the MAJORITY of the total active/residual illness, AND were there ≥2 weeks of delusions/hallucinations without a mood episode?", "note": "Schizoaffective requires a concurrent mood episode for the majority of the illness plus ≥2 weeks of psychosis without prominent mood symptoms. If mood episodes occupy only a minority, favor Schizophrenia; if psychosis is confined to mood episodes, favor a mood disorder with psychotic features.", "yes": { "outcome": "Schizoaffective Disorder", "diagnoses": [{ "name": "Schizoaffective Disorder", "table": "3.2.2" }] }, "no": { "outcome": "Schizophrenia (mood episodes a minority of illness)", "diagnoses": [{ "name": "Schizophrenia", "table": "3.2.1" }] } },
+      { "id": "n10", "question": "Has the disturbance lasted at least 1 month but less than 6 months?", "yes": { "outcome": "Schizophreniform Disorder", "diagnoses": [{ "name": "Schizophreniform Disorder", "table": "3.2.1" }] }, "no": { "goto": "n11" } },
+      { "id": "n11", "question": "Has the disturbance lasted at least 1 day but less than 1 month with return to premorbid functioning?", "yes": { "outcome": "Brief Psychotic Disorder", "diagnoses": [{ "name": "Brief Psychotic Disorder", "table": "3.2.4" }] }, "no": { "goto": "n12" } },
+      { "id": "n12", "question": "Are the delusion-like beliefs subthreshold or better explained by another disorder (e.g., OCD, body dysmorphic disorder, delusional-level)?", "yes": { "outcome": "Consider OCD/BDD with absent insight or another disorder", "kind": "refer", "diagnoses": [{ "name": "Obsessive-Compulsive Disorder", "table": "3.6.1" }, { "name": "Body Dysmorphic Disorder", "table": "3.6.2" }] }, "no": { "outcome": "Other Specified / Unspecified Schizophrenia Spectrum and Other Psychotic Disorder", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.6",
+    "slug": "hallucinations",
+    "title": "Hallucinations",
+    "presenting": "Hallucinations (perceptions without external stimulus)",
+    "group": "psychotic",
+    "overview": "Distinguish true hallucinations from normal experiences (hypnagogic/hypnopompic phenomena, intense imagery) and illusions. The branching parallels the delusions tree: rule out substance and medical etiologies, then use the mood/psychosis relationship to differentiate the primary disorders. Hallucinations in clear consciousness confined to one modality, or occurring only at sleep-wake transitions, have distinct implications.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Do the hallucinations occur only while falling asleep or waking (hypnagogic/hypnopompic)?", "yes": { "outcome": "Normal sleep-related phenomena (consider narcolepsy if with cataplexy/other features)", "kind": "no-disorder", "diagnoses": [{ "name": "Narcolepsy (if other features present)", "seeTree": "2.20" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Are the hallucinations due to the physiological effects of a substance (including medication or withdrawal)?", "yes": { "outcome": "Substance/Medication-Induced Psychotic Disorder (or intoxication/withdrawal)", "diagnoses": [{ "name": "Substance/Medication-Induced Psychotic Disorder", "seeTree": "2.26" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Are they due to the physiological effects of a general medical condition (including delirium)?", "yes": { "outcome": "Psychotic Disorder Due to Another Medical Condition / Delirium", "diagnoses": [{ "name": "Psychotic Disorder Due to Another Medical Condition", "seeTree": "2.29" }, { "name": "Delirium", "table": "3.16.1" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Do they occur exclusively during episodes of elevated/expansive/irritable mood?", "yes": { "outcome": "Bipolar Disorder, With Psychotic Features", "diagnoses": [{ "name": "Bipolar I/II Disorder, With Psychotic Features", "table": "3.3.1", "seeTree": "2.8" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Do they occur exclusively during Major Depressive Episodes?", "yes": { "outcome": "Depressive Disorder, With Psychotic Features", "diagnoses": [{ "name": "Major Depressive Disorder, With Psychotic Features", "table": "3.4.1", "seeTree": "2.10" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Are the hallucinations part of a re-experiencing response to a traumatic event (flashbacks)?", "yes": { "outcome": "PTSD / Acute Stress Disorder", "diagnoses": [{ "name": "Posttraumatic Stress Disorder", "table": "3.7.1", "seeTree": "2.16" }] }, "no": { "goto": "n7" } },
+      { "id": "n7", "question": "Have psychotic symptoms persisted for 6 months or more?", "yes": { "goto": "n8" }, "no": { "goto": "n11" } },
+      { "id": "n8", "question": "Are they accompanied by other characteristic psychotic symptoms of schizophrenia?", "yes": { "goto": "n9" }, "no": { "outcome": "Delusional Disorder (if delusions predominate) or reconsider", "diagnoses": [{ "name": "Delusional Disorder", "table": "3.2.3" }] } },
+      { "id": "n9", "question": "Is there a history of Major Depressive or Manic Episodes overlapping the active psychotic period?", "yes": { "goto": "n10" }, "no": { "outcome": "Schizophrenia", "diagnoses": [{ "name": "Schizophrenia", "table": "3.2.1" }] } },
+      { "id": "n10", "question": "Have mood episodes been present for the majority of the illness, with ≥2 weeks of psychosis without a mood episode?", "yes": { "outcome": "Schizoaffective Disorder", "diagnoses": [{ "name": "Schizoaffective Disorder", "table": "3.2.2" }] }, "no": { "outcome": "Schizophrenia (mood a minority of illness)", "diagnoses": [{ "name": "Schizophrenia", "table": "3.2.1" }] } },
+      { "id": "n11", "question": "Has the disturbance lasted at least 1 month but less than 6 months?", "yes": { "outcome": "Schizophreniform Disorder", "diagnoses": [{ "name": "Schizophreniform Disorder", "table": "3.2.1" }] }, "no": { "goto": "n12" } },
+      { "id": "n12", "question": "Has it lasted at least 1 day but less than 1 month with full recovery?", "yes": { "outcome": "Brief Psychotic Disorder", "diagnoses": [{ "name": "Brief Psychotic Disorder", "table": "3.2.4" }] }, "no": { "outcome": "Other Specified / Unspecified Schizophrenia Spectrum and Other Psychotic Disorder", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.7",
+    "slug": "catatonic-symptoms",
+    "title": "Catatonic Symptoms",
+    "presenting": "Catatonic symptoms (stupor, mutism, posturing, rigidity, echophenomena, excitement)",
+    "group": "psychotic",
+    "overview": "Catatonia is a syndrome, not a diagnosis. It occurs with medical conditions, psychotic disorders, and mood disorders, and it can be life-threatening (malignant catatonia). Identify the underlying context; DSM-5 codes catatonia as a specifier of another mental disorder, catatonia due to another medical condition, or unspecified catatonia.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Are the catatonic symptoms due to the physiological effects of a general medical condition?", "yes": { "outcome": "Catatonic Disorder Due to Another Medical Condition", "diagnoses": [{ "name": "Catatonic Disorder Due to Another Medical Condition", "seeTree": "2.29" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Are they due to the physiological effects of a substance/medication (e.g., neuroleptic malignant syndrome, intoxication)?", "yes": { "outcome": "Substance/Medication-Induced (consider NMS as a medical emergency)", "diagnoses": [{ "name": "Medication-Induced Movement Disorder / Substance-Induced state", "seeTree": "2.26" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Do they occur in the context of a psychotic disorder (schizophrenia, schizophreniform, schizoaffective, brief psychotic)?", "yes": { "outcome": "Catatonia associated with a psychotic disorder", "diagnoses": [{ "name": "Schizophrenia (with catatonia)", "table": "3.2.1", "seeTree": "2.5" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Do they occur in the context of a Manic or Major Depressive Episode?", "yes": { "outcome": "Catatonia associated with a mood disorder", "diagnoses": [{ "name": "Bipolar or Depressive Disorder (with catatonia)", "table": "3.3.1", "seeTree": "2.8" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Do they occur with the social-communication deficits and restricted/repetitive behaviors of autism spectrum disorder?", "yes": { "outcome": "Catatonia associated with Autism Spectrum Disorder", "diagnoses": [{ "name": "Autism Spectrum Disorder (with catatonia)", "table": "3.1.3" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Is the clinical picture a catatonia syndrome where the underlying disorder is not yet established?", "yes": { "outcome": "Unspecified Catatonia", "diagnoses": [{ "name": "Unspecified Catatonia", "table": "3.2.5" }] }, "no": { "outcome": "Reconsider whether criteria for catatonia are met", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.8",
+    "slug": "elevated-expansive-mood",
+    "title": "Elevated or Expansive Mood",
+    "presenting": "Elevated, expansive mood with increased energy/activity",
+    "group": "bipolar",
+    "overview": "Establish whether the mood episode is a full Manic Episode (≥1 week or hospitalization, marked impairment/psychosis) or a Hypomanic Episode (≥4 days, observable but not markedly impairing, no psychosis). Manic and hypomanic episodes are the building blocks for the bipolar disorders. Always rule out substance/medication and medical causes first.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is the mood disturbance due to the physiological effects of a substance/medication (including antidepressant-triggered switch persisting beyond physiological effect)?", "yes": { "outcome": "Substance/Medication-Induced Bipolar and Related Disorder", "diagnoses": [{ "name": "Substance/Medication-Induced Bipolar and Related Disorder", "seeTree": "2.26" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Is it due to the physiological effects of a general medical condition?", "yes": { "outcome": "Bipolar and Related Disorder Due to Another Medical Condition", "diagnoses": [{ "name": "Bipolar and Related Disorder Due to Another Medical Condition", "seeTree": "2.29" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Does the episode last ≥1 week (or require hospitalization) with marked impairment or psychotic features?", "note": "This defines a Manic Episode.", "yes": { "goto": "n4" }, "no": { "goto": "n5" } },
+      { "id": "n4", "question": "Manic Episode confirmed — is there any additional context that changes coding (e.g., psychotic features, mixed features)?", "yes": { "outcome": "Bipolar I Disorder (specify features)", "diagnoses": [{ "name": "Bipolar I Disorder", "table": "3.3.1" }] }, "no": { "outcome": "Bipolar I Disorder", "diagnoses": [{ "name": "Bipolar I Disorder", "table": "3.3.1" }] } },
+      { "id": "n5", "question": "Does the episode last ≥4 days with an observable, uncharacteristic change but without marked impairment or psychosis (Hypomanic Episode)?", "yes": { "goto": "n6" }, "no": { "goto": "n7" } },
+      { "id": "n6", "question": "Is there also a history of at least one Major Depressive Episode (and never a full Manic Episode)?", "yes": { "outcome": "Bipolar II Disorder", "diagnoses": [{ "name": "Bipolar II Disorder", "table": "3.3.2" }] }, "no": { "outcome": "Other Specified Bipolar and Related Disorder (or reassess for prior mania/MDE)", "diagnoses": [{ "name": "Other Specified Bipolar and Related Disorder", "table": "3.3.2" }] } },
+      { "id": "n7", "question": "Over ≥2 years, are there numerous periods of hypomanic and depressive symptoms that never meet full episode criteria?", "yes": { "outcome": "Cyclothymic Disorder", "diagnoses": [{ "name": "Cyclothymic Disorder", "table": "3.3.3" }] }, "no": { "goto": "n8" } },
+      { "id": "n8", "question": "Do elevated-mood symptoms occur but fall below threshold and cause clinically significant distress/impairment?", "yes": { "outcome": "Other Specified / Unspecified Bipolar and Related Disorder", "diagnoses": [{ "name": "Other Specified / Unspecified Bipolar and Related Disorder", "table": "3.3.1" }] }, "no": { "outcome": "Elevated mood not indicative of a bipolar disorder (e.g., normal happiness, temperament)", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.9",
+    "slug": "irritable-mood",
+    "title": "Irritable Mood",
+    "presenting": "Irritable mood",
+    "group": "bipolar",
+    "overview": "Irritability is highly nonspecific and appears in mania, depression, anxiety, disruptive disorders, DMDD, personality disorders, PTSD, and as a normal reaction. Rule out substance/medical causes, then determine whether irritability marks a manic or depressive episode before considering the developmental and disruptive disorders.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is the irritability due to the physiological effects of a substance/medication?", "yes": { "outcome": "Substance/Medication-Induced Disorder", "diagnoses": [{ "name": "Substance/Medication-Induced Disorder", "seeTree": "2.26" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Is it due to the physiological effects of a general medical condition?", "yes": { "outcome": "Mental Disorder Due to Another Medical Condition", "diagnoses": [{ "name": "Disorder Due to Another Medical Condition", "seeTree": "2.29" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Does it occur during a period of elevated energy/activity meeting manic or hypomanic criteria?", "yes": { "outcome": "Manic/Hypomanic Episode", "kind": "intermediate", "diagnoses": [{ "name": "Bipolar I/II Disorder", "table": "3.3.1", "seeTree": "2.8" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Does it occur as part of a Major Depressive Episode or persistent depressive symptoms?", "yes": { "outcome": "A depressive disorder", "kind": "refer", "diagnoses": [{ "name": "Major Depressive Disorder", "table": "3.4.1", "seeTree": "2.10" }, { "name": "Persistent Depressive Disorder", "table": "3.4.2" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "In a child ≤18 (onset before 10): severe recurrent temper outbursts with persistently irritable/angry mood between them, ≥12 months?", "yes": { "outcome": "Disruptive Mood Dysregulation Disorder", "diagnoses": [{ "name": "Disruptive Mood Dysregulation Disorder", "table": "3.4.4" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Does it occur with excessive anxiety/worry (e.g., generalized anxiety) or after trauma (PTSD)?", "yes": { "outcome": "Anxiety or trauma-related disorder", "kind": "refer", "diagnoses": [{ "name": "Generalized Anxiety Disorder", "table": "3.5.7", "seeTree": "2.13" }, { "name": "Posttraumatic Stress Disorder", "table": "3.7.1", "seeTree": "2.16" }] }, "no": { "goto": "n7" } },
+      { "id": "n7", "question": "Is it part of a pattern of argumentative/defiant behavior (ODD) or recurrent aggressive outbursts (intermittent explosive disorder)?", "yes": { "outcome": "A disruptive/impulse-control disorder", "kind": "refer", "diagnoses": [{ "name": "Oppositional Defiant Disorder", "table": "3.14.1" }, { "name": "Intermittent Explosive Disorder", "table": "3.14.2", "seeTree": "2.23" }] }, "no": { "goto": "n8" } },
+      { "id": "n8", "question": "Is it a maladaptive response to a psychosocial stressor?", "yes": { "outcome": "Adjustment Disorder", "diagnoses": [{ "name": "Adjustment Disorder", "table": "3.7.2" }] }, "no": { "outcome": "Irritability not indicative of a mental disorder (temperament, situational)", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.10",
+    "slug": "depressed-mood",
+    "title": "Depressed Mood",
+    "presenting": "Depressed mood",
+    "group": "depressive",
+    "overview": "One of the most common presentations. After ruling out substance and medical etiologies, determine whether the depressed mood constitutes a Major Depressive Episode, then whether there is any history of mania/hypomania (which reclassifies the case as bipolar), and how psychotic symptoms relate to the mood episodes. Subthreshold, persistent, and stressor-related presentations are captured at the end.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is the depressed mood due to the physiological effects of a substance/medication?", "yes": { "outcome": "Substance/Medication-Induced Depressive Disorder", "diagnoses": [{ "name": "Substance/Medication-Induced Depressive Disorder", "seeTree": "2.26" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Is it due to the physiological effects of a general medical condition?", "yes": { "outcome": "Depressive Disorder Due to Another Medical Condition", "diagnoses": [{ "name": "Depressive Disorder Due to Another Medical Condition", "seeTree": "2.29" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Is there ≥2 weeks of depressed mood and/or anhedonia with ≥5 total depressive symptoms (a Major Depressive Episode)?", "yes": { "goto": "n4" }, "no": { "goto": "n8" } },
+      { "id": "n4", "question": "Is there any lifetime history of a Manic or Hypomanic Episode?", "note": "A single lifetime manic/hypomanic episode reclassifies the case as bipolar.", "yes": { "outcome": "A bipolar disorder", "kind": "refer", "diagnoses": [{ "name": "Bipolar I Disorder", "table": "3.3.1", "seeTree": "2.8" }, { "name": "Bipolar II Disorder", "table": "3.3.2" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Is there a history of delusions or hallucinations?", "yes": { "goto": "n6" }, "no": { "outcome": "Major Depressive Disorder", "diagnoses": [{ "name": "Major Depressive Disorder", "table": "3.4.1" }] } },
+      { "id": "n6", "question": "Do the psychotic symptoms occur exclusively during Major Depressive Episodes?", "yes": { "outcome": "Major Depressive Disorder, With Psychotic Features", "diagnoses": [{ "name": "Major Depressive Disorder, With Psychotic Features", "table": "3.4.1" }] }, "no": { "outcome": "A Schizophrenia Spectrum / Other Psychotic Disorder is present", "kind": "refer", "diagnoses": [{ "name": "Schizoaffective Disorder", "table": "3.2.2", "seeTree": "2.5" }] } },
+      { "id": "n8", "question": "Is there depressed mood for most of the day, more days than not, for ≥2 years (≥1 year in children/adolescents)?", "yes": { "outcome": "Persistent Depressive Disorder (Dysthymia)", "diagnoses": [{ "name": "Persistent Depressive Disorder", "table": "3.4.2" }] }, "no": { "goto": "n9" } },
+      { "id": "n9", "question": "Do mood symptoms occur in the final premenstrual week and remit after menses, across most cycles?", "yes": { "outcome": "Premenstrual Dysphoric Disorder", "diagnoses": [{ "name": "Premenstrual Dysphoric Disorder", "table": "3.4.3" }] }, "no": { "goto": "n10" } },
+      { "id": "n10", "question": "Is the depressed mood a maladaptive response to an identifiable psychosocial stressor?", "yes": { "outcome": "Adjustment Disorder, With Depressed Mood", "diagnoses": [{ "name": "Adjustment Disorder", "table": "3.7.2" }] }, "no": { "goto": "n11" } },
+      { "id": "n11", "question": "Are clinically significant depressive symptoms present but below threshold for the above?", "yes": { "outcome": "Other Specified / Unspecified Depressive Disorder", "diagnoses": [{ "name": "Other Specified / Unspecified Depressive Disorder", "table": "3.4.1" }] }, "no": { "outcome": "Sadness not indicative of a mental disorder (e.g., ordinary sadness, uncomplicated grief)", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.11",
+    "slug": "suicidal-ideation-behavior",
+    "title": "Suicidal Ideation or Behavior",
+    "presenting": "Suicidal ideation or behavior",
+    "group": "depressive",
+    "overview": "Suicidal ideation and behavior cut across nearly every diagnostic grouping and demand immediate risk assessment independent of diagnosis. Diagnostically, identify the disorder(s) in which the ideation is occurring; treatment and safety planning take priority over nosology. This tree points to the disorders most commonly associated with suicidality.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is the ideation/behavior occurring in the context of a substance intoxication/withdrawal state or medication effect?", "yes": { "outcome": "Address substance state; a substance-induced mood disorder may be present", "diagnoses": [{ "name": "Substance/Medication-Induced Depressive Disorder", "seeTree": "2.26" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Is it occurring during a Major Depressive Episode?", "yes": { "outcome": "Major Depressive Episode context", "kind": "refer", "diagnoses": [{ "name": "Major Depressive Disorder", "table": "3.4.1", "seeTree": "2.10" }, { "name": "Bipolar Disorder, depressed", "table": "3.3.1" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Is it occurring in the context of a psychotic disorder (e.g., command hallucinations, delusions)?", "yes": { "outcome": "Psychotic disorder context", "kind": "refer", "diagnoses": [{ "name": "Schizophrenia Spectrum / Other Psychotic Disorder", "table": "3.2.1", "seeTree": "2.5" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Is it occurring after a traumatic event with PTSD features?", "yes": { "outcome": "PTSD / Acute Stress Disorder context", "diagnoses": [{ "name": "Posttraumatic Stress Disorder", "table": "3.7.1", "seeTree": "2.16" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Is the self-harm/ideation part of a pattern of affective instability, identity disturbance, and impulsivity?", "yes": { "outcome": "Borderline Personality Disorder (also see self-injury tree)", "diagnoses": [{ "name": "Borderline Personality Disorder", "table": "3.17.5", "seeTree": "2.25" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Is it a maladaptive response to a recent psychosocial stressor without another disorder?", "yes": { "outcome": "Adjustment Disorder", "diagnoses": [{ "name": "Adjustment Disorder", "table": "3.7.2" }] }, "no": { "outcome": "Suicidal ideation/behavior not explained by a specific disorder — continue risk assessment and monitor", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.12",
+    "slug": "psychomotor-retardation",
+    "title": "Psychomotor Retardation",
+    "presenting": "Psychomotor retardation (slowed movement, speech, thought)",
+    "group": "depressive",
+    "overview": "Slowing of movement and thought can reflect depression, catatonia, parkinsonism (including medication-induced), hypoactive delirium, neurocognitive disorders, and negative symptoms of psychosis. Rule out substance/medication (e.g., neuroleptics) and medical causes before attributing it to a primary mood or psychotic disorder.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is it due to the physiological effects of a substance/medication (e.g., sedatives, antipsychotic-induced parkinsonism)?", "yes": { "outcome": "Substance/Medication-Induced state (e.g., medication-induced parkinsonism)", "diagnoses": [{ "name": "Medication-Induced Movement Disorder / Substance-Induced state", "seeTree": "2.26" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Is it due to the physiological effects of a general medical condition (e.g., Parkinson's disease, hypothyroidism, hypoactive delirium)?", "yes": { "outcome": "Medical etiology (including delirium)", "diagnoses": [{ "name": "Delirium / Disorder Due to Another Medical Condition", "table": "3.16.1", "seeTree": "2.29" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Does it meet criteria for catatonia (with stupor, mutism, posturing, negativism)?", "yes": { "outcome": "Catatonia", "diagnoses": [{ "name": "Catatonia", "table": "3.2.5", "seeTree": "2.7" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Does it occur as part of a Major Depressive or Manic Episode (mixed/with psychomotor changes)?", "yes": { "outcome": "A mood disorder", "kind": "refer", "diagnoses": [{ "name": "Major Depressive Disorder", "table": "3.4.1", "seeTree": "2.10" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Does it occur as a negative symptom of a psychotic disorder?", "yes": { "outcome": "Schizophrenia Spectrum / Other Psychotic Disorder", "diagnoses": [{ "name": "Schizophrenia", "table": "3.2.1", "seeTree": "2.5" }] }, "no": { "outcome": "Consider neurocognitive disorder or reassess — not attributable to a specific mood/psychotic disorder", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.13",
+    "slug": "anxiety",
+    "title": "Anxiety",
+    "presenting": "Anxiety (fear, worry, apprehension)",
+    "group": "anxiety",
+    "overview": "After ruling out substance and medical causes, the anxiety disorders are differentiated by the FOCUS of the fear/anxiety: separation from attachment figures, specific objects/situations, social scrutiny, unexpected panic and its consequences, or pervasive worry across domains. Obsessive-compulsive and trauma-related disorders are considered when the anxiety is tied to obsessions/compulsions or to a traumatic event.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is the anxiety due to the physiological effects of a substance/medication (e.g., caffeine, stimulants, withdrawal)?", "yes": { "outcome": "Substance/Medication-Induced Anxiety Disorder", "diagnoses": [{ "name": "Substance/Medication-Induced Anxiety Disorder", "seeTree": "2.26" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Is it due to the physiological effects of a general medical condition (e.g., hyperthyroidism, arrhythmia)?", "yes": { "outcome": "Anxiety Disorder Due to Another Medical Condition", "diagnoses": [{ "name": "Anxiety Disorder Due to Another Medical Condition", "seeTree": "2.29" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Is the anxiety focused on separation from attachment figures?", "yes": { "outcome": "Separation Anxiety Disorder", "diagnoses": [{ "name": "Separation Anxiety Disorder", "table": "3.5.1" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Is it cued by a specific object or situation (e.g., heights, animals, injections)?", "yes": { "outcome": "Specific Phobia", "diagnoses": [{ "name": "Specific Phobia", "table": "3.5.3" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Is it focused on social situations involving possible scrutiny by others?", "yes": { "outcome": "Social Anxiety Disorder", "diagnoses": [{ "name": "Social Anxiety Disorder", "table": "3.5.4" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Are there recurrent unexpected panic attacks with persistent worry about further attacks or their consequences?", "yes": { "outcome": "Panic Disorder", "diagnoses": [{ "name": "Panic Disorder", "table": "3.5.5", "seeTree": "2.14" }] }, "no": { "goto": "n7" } },
+      { "id": "n7", "question": "Is it focused on situations where escape may be difficult or help unavailable (e.g., public transport, open/enclosed spaces, crowds)?", "yes": { "outcome": "Agoraphobia", "diagnoses": [{ "name": "Agoraphobia", "table": "3.5.6" }] }, "no": { "goto": "n8" } },
+      { "id": "n8", "question": "Is it driven by obsessions and/or compulsions?", "yes": { "outcome": "Obsessive-Compulsive Disorder", "diagnoses": [{ "name": "Obsessive-Compulsive Disorder", "table": "3.6.1" }] }, "no": { "goto": "n9" } },
+      { "id": "n9", "question": "Does it follow exposure to a traumatic event with re-experiencing, avoidance, and hyperarousal?", "yes": { "outcome": "PTSD / Acute Stress Disorder", "diagnoses": [{ "name": "Posttraumatic Stress Disorder", "table": "3.7.1", "seeTree": "2.16" }] }, "no": { "goto": "n10" } },
+      { "id": "n10", "question": "Is there excessive worry about multiple events/activities, more days than not for ≥6 months, hard to control?", "yes": { "outcome": "Generalized Anxiety Disorder", "diagnoses": [{ "name": "Generalized Anxiety Disorder", "table": "3.5.7" }] }, "no": { "goto": "n11" } },
+      { "id": "n11", "question": "Is the anxiety a maladaptive response to an identifiable psychosocial stressor?", "yes": { "outcome": "Adjustment Disorder, With Anxiety", "diagnoses": [{ "name": "Adjustment Disorder", "table": "3.7.2" }] }, "no": { "goto": "n12" } },
+      { "id": "n12", "question": "Are clinically significant anxiety symptoms present but below threshold for a specific disorder?", "yes": { "outcome": "Other Specified / Unspecified Anxiety Disorder", "diagnoses": [{ "name": "Other Specified / Unspecified Anxiety Disorder", "table": "3.5.7" }] }, "no": { "outcome": "Anxiety within normal limits — not a mental disorder", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.14",
+    "slug": "panic-attacks",
+    "title": "Panic Attacks",
+    "presenting": "Panic attacks",
+    "group": "anxiety",
+    "overview": "A panic attack is a symptom, not a disorder, and can occur in any anxiety disorder and many other conditions. The key distinction is between UNEXPECTED attacks (occurring without an obvious cue) and EXPECTED attacks (cued by a feared object/situation). Recurrent unexpected attacks plus anticipatory worry define panic disorder; expected attacks point to the disorder tied to their trigger.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Are the attacks due to the physiological effects of a substance/medication (e.g., stimulant, caffeine, withdrawal)?", "yes": { "outcome": "Substance/Medication-Induced Anxiety Disorder", "diagnoses": [{ "name": "Substance/Medication-Induced Anxiety Disorder", "seeTree": "2.26" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Are they due to the physiological effects of a general medical condition (e.g., arrhythmia, hyperthyroidism, pheochromocytoma)?", "yes": { "outcome": "Anxiety Disorder Due to Another Medical Condition", "diagnoses": [{ "name": "Anxiety Disorder Due to Another Medical Condition", "seeTree": "2.29" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Are the attacks cued exclusively by a specific phobic object/situation?", "yes": { "outcome": "Specific Phobia", "diagnoses": [{ "name": "Specific Phobia", "table": "3.5.3" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Are they cued exclusively by social scrutiny?", "yes": { "outcome": "Social Anxiety Disorder", "diagnoses": [{ "name": "Social Anxiety Disorder", "table": "3.5.4" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Are they cued exclusively by agoraphobic situations?", "yes": { "outcome": "Agoraphobia", "diagnoses": [{ "name": "Agoraphobia", "table": "3.5.6" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Are they cued exclusively by reminders of a traumatic event?", "yes": { "outcome": "PTSD / Acute Stress Disorder", "diagnoses": [{ "name": "Posttraumatic Stress Disorder", "table": "3.7.1", "seeTree": "2.16" }] }, "no": { "goto": "n7" } },
+      { "id": "n7", "question": "Are at least some attacks unexpected, with ≥1 month of worry about further attacks or maladaptive change in behavior?", "yes": { "outcome": "Panic Disorder", "diagnoses": [{ "name": "Panic Disorder", "table": "3.5.5" }] }, "no": { "outcome": "Panic attacks present as a specifier of another disorder, or subthreshold — reassess the primary condition", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.15",
+    "slug": "avoidance-behavior",
+    "title": "Avoidance Behavior",
+    "presenting": "Avoidance behavior",
+    "group": "anxiety",
+    "overview": "Avoidance is a final common pathway of many disorders; the diagnostic question is WHAT is being avoided and WHY. Identify the motivation for avoidance — feared objects, social scrutiny, panic-prone situations, trauma reminders, obsessional triggers, appearance concerns, or separation — to reach the underlying disorder.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is the avoidance due to a substance/medication or general medical condition affecting the CNS?", "yes": { "outcome": "Substance/medical etiology", "diagnoses": [{ "name": "Substance/Medication-Induced or Medical Disorder", "seeTree": "2.26" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Is avoidance driven by fear of specific objects/situations?", "yes": { "outcome": "Specific Phobia", "diagnoses": [{ "name": "Specific Phobia", "table": "3.5.3" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Is it driven by fear of social scrutiny/negative evaluation?", "yes": { "outcome": "Social Anxiety Disorder", "diagnoses": [{ "name": "Social Anxiety Disorder", "table": "3.5.4" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Is it driven by fear of panic-like symptoms in situations where escape is hard (agoraphobia)?", "yes": { "outcome": "Agoraphobia", "diagnoses": [{ "name": "Agoraphobia", "table": "3.5.6" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Is it avoidance of reminders of a traumatic event?", "yes": { "outcome": "PTSD / Acute Stress Disorder", "diagnoses": [{ "name": "Posttraumatic Stress Disorder", "table": "3.7.1", "seeTree": "2.16" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Is it avoidance triggered by obsessions (to prevent feared outcomes)?", "yes": { "outcome": "Obsessive-Compulsive Disorder", "diagnoses": [{ "name": "Obsessive-Compulsive Disorder", "table": "3.6.1" }] }, "no": { "goto": "n7" } },
+      { "id": "n7", "question": "Is it avoidance driven by perceived appearance flaws?", "yes": { "outcome": "Body Dysmorphic Disorder", "diagnoses": [{ "name": "Body Dysmorphic Disorder", "table": "3.6.2" }] }, "no": { "goto": "n8" } },
+      { "id": "n8", "question": "Is it avoidance of separation from attachment figures?", "yes": { "outcome": "Separation Anxiety Disorder", "diagnoses": [{ "name": "Separation Anxiety Disorder", "table": "3.5.1" }] }, "no": { "goto": "n9" } },
+      { "id": "n9", "question": "Is it a pervasive pattern of social inhibition and avoidance due to feelings of inadequacy and fear of criticism (personality-level)?", "yes": { "outcome": "Avoidant Personality Disorder", "diagnoses": [{ "name": "Avoidant Personality Disorder", "table": "3.17.8" }] }, "no": { "outcome": "Avoidance not explained by a specific disorder — reassess motivation and context", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.16",
+    "slug": "trauma-psychosocial-stressors",
+    "title": "Trauma or Psychosocial Stressors in the Etiology",
+    "presenting": "Symptoms arising after a trauma or psychosocial stressor",
+    "group": "trauma",
+    "overview": "When symptoms follow an identifiable stressor, the differential turns on the nature of the stressor (traumatic vs. ordinary), the symptom profile, and timing/duration. Traumatic stressors with characteristic re-experiencing, avoidance, cognition/mood changes, and hyperarousal point to PTSD or acute stress disorder; a broader maladaptive response to a non-traumatic stressor suggests adjustment disorder. Other disorders can also be precipitated by stress.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Was the stressor an exposure to actual or threatened death, serious injury, or sexual violence (a traumatic stressor)?", "yes": { "goto": "n2" }, "no": { "goto": "n5" } },
+      { "id": "n2", "question": "Are there characteristic symptoms — intrusion/re-experiencing, avoidance, negative alterations in cognition/mood, and arousal?", "yes": { "goto": "n3" }, "no": { "goto": "n4" } },
+      { "id": "n3", "question": "Has the full symptom picture persisted for more than 1 month?", "yes": { "outcome": "Posttraumatic Stress Disorder", "diagnoses": [{ "name": "Posttraumatic Stress Disorder", "table": "3.7.1" }] }, "no": { "outcome": "Acute Stress Disorder (3 days to 1 month)", "diagnoses": [{ "name": "Acute Stress Disorder", "table": "3.7.1" }] } },
+      { "id": "n4", "question": "Are there prominent dissociative symptoms (amnesia, depersonalization/derealization) related to the trauma?", "yes": { "outcome": "A dissociative disorder", "kind": "refer", "diagnoses": [{ "name": "Dissociative Amnesia", "table": "3.8.1" }, { "name": "Depersonalization/Derealization Disorder", "table": "3.8.2" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "In a child with pathogenic care, is there a pattern of inhibited/emotionally withdrawn behavior (or indiscriminate social behavior)?", "yes": { "outcome": "Reactive Attachment Disorder or Disinhibited Social Engagement Disorder", "diagnoses": [{ "name": "Reactive Attachment Disorder / Disinhibited Social Engagement Disorder", "table": "3.7.1" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Do full criteria for another disorder (e.g., major depressive, anxiety, psychotic) precipitated by the stressor apply?", "yes": { "outcome": "Diagnose the specific precipitated disorder", "kind": "refer", "diagnoses": [{ "name": "Major Depressive Disorder", "table": "3.4.1", "seeTree": "2.10" }] }, "no": { "goto": "n7" } },
+      { "id": "n7", "question": "Are there clinically significant emotional/behavioral symptoms within 3 months of a stressor, in excess of expectation, not meeting another disorder?", "yes": { "outcome": "Adjustment Disorder", "diagnoses": [{ "name": "Adjustment Disorder", "table": "3.7.2" }] }, "no": { "outcome": "Normal stress reaction / not a mental disorder", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.17",
+    "slug": "somatic-complaints",
+    "title": "Somatic Complaints or Illness/Appearance Anxiety",
+    "presenting": "Somatic complaints or health/appearance anxiety",
+    "group": "somatic",
+    "overview": "First ensure a general medical condition has been appropriately evaluated. The somatic symptom and related disorders are differentiated by whether distressing somatic symptoms are present, whether the focus is on having/acquiring a serious illness versus the symptoms themselves, whether there is deceptive symptom production, and whether neurological symptoms are incompatible with recognized disease.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Are the symptoms fully explained by a general medical condition (with a proportionate response)?", "yes": { "outcome": "General medical condition (consider Psychological Factors Affecting Other Medical Conditions if psychological factors adversely affect it)", "diagnoses": [{ "name": "Psychological Factors Affecting Other Medical Conditions", "table": "3.9.4" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Are symptoms intentionally produced/feigned for external incentives (malingering) or to assume the sick role (factitious)?", "yes": { "outcome": "Malingering (external incentive) or Factitious Disorder (no external incentive)", "diagnoses": [{ "name": "Factitious Disorder", "table": "3.9.5" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Are there neurological symptoms (weakness, movement, sensory, seizures) clinically incompatible with recognized disease?", "yes": { "outcome": "Conversion Disorder (Functional Neurological Symptom Disorder)", "diagnoses": [{ "name": "Conversion Disorder", "table": "3.9.3" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Are there ≥1 distressing somatic symptoms with excessive thoughts/feelings/behaviors about them?", "yes": { "outcome": "Somatic Symptom Disorder", "diagnoses": [{ "name": "Somatic Symptom Disorder", "table": "3.9.1" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Is there preoccupation with having/acquiring a serious illness, with minimal or no somatic symptoms and high health anxiety?", "yes": { "outcome": "Illness Anxiety Disorder", "diagnoses": [{ "name": "Illness Anxiety Disorder", "table": "3.9.2" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Is there preoccupation with a perceived defect/flaw in physical appearance, with repetitive behaviors?", "yes": { "outcome": "Body Dysmorphic Disorder", "diagnoses": [{ "name": "Body Dysmorphic Disorder", "table": "3.6.2" }] }, "no": { "goto": "n7" } },
+      { "id": "n7", "question": "Are the somatic complaints better explained by a depressive, anxiety, or panic disorder?", "yes": { "outcome": "Diagnose the underlying mood/anxiety disorder", "kind": "refer", "diagnoses": [{ "name": "Major Depressive Disorder", "table": "3.4.1", "seeTree": "2.10" }, { "name": "Panic Disorder", "table": "3.5.5", "seeTree": "2.14" }] }, "no": { "outcome": "Other Specified / Unspecified Somatic Symptom and Related Disorder, or no disorder", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.18",
+    "slug": "appetite-eating-behavior",
+    "title": "Appetite Changes or Unusual Eating Behavior",
+    "presenting": "Appetite change or unusual eating behavior",
+    "group": "eating",
+    "overview": "Distinguish appetite/weight change occurring as part of another disorder (depression, mania, anxiety, psychosis) or a medical/substance cause from the primary feeding and eating disorders, which are differentiated by restriction and low weight (anorexia), binge-purge cycles (bulimia), binge eating without compensation (binge-eating disorder), avoidant/restrictive intake without body-image disturbance (ARFID), and eating of nonnutritive substances (pica) or regurgitation (rumination).",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is the appetite/eating change due to a substance/medication or general medical condition?", "yes": { "outcome": "Substance/medical etiology", "diagnoses": [{ "name": "Substance/Medication-Induced or Medical cause", "seeTree": "2.29" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Does it occur exclusively as part of a mood, anxiety, or psychotic disorder?", "yes": { "outcome": "Diagnose the underlying disorder", "kind": "refer", "diagnoses": [{ "name": "Major Depressive Disorder", "table": "3.4.1", "seeTree": "2.10" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Is there restriction of intake leading to significantly low body weight, fear of weight gain, and body-image disturbance?", "yes": { "outcome": "Anorexia Nervosa", "diagnoses": [{ "name": "Anorexia Nervosa", "table": "3.10.2" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Are there recurrent binges with compensatory behaviors (vomiting, laxatives, fasting, exercise), self-evaluation unduly influenced by shape/weight, at normal-ish weight?", "yes": { "outcome": "Bulimia Nervosa", "diagnoses": [{ "name": "Bulimia Nervosa", "table": "3.10.3" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Are there recurrent binges with marked distress but WITHOUT regular compensatory behavior?", "yes": { "outcome": "Binge-Eating Disorder", "diagnoses": [{ "name": "Binge-Eating Disorder", "table": "3.10.4" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Is there avoidance/restriction of food (based on sensory features or aversive consequences) with nutritional/psychosocial impact but no body-image disturbance?", "yes": { "outcome": "Avoidant/Restrictive Food Intake Disorder", "diagnoses": [{ "name": "Avoidant/Restrictive Food Intake Disorder", "table": "3.10.1" }] }, "no": { "goto": "n7" } },
+      { "id": "n7", "question": "Is there persistent eating of nonnutritive substances (pica) or repeated regurgitation (rumination)?", "yes": { "outcome": "Pica or Rumination Disorder", "diagnoses": [{ "name": "Pica / Rumination Disorder", "table": "3.10.1" }] }, "no": { "outcome": "Other Specified / Unspecified Feeding or Eating Disorder, or no disorder", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.19",
+    "slug": "insomnia",
+    "title": "Insomnia",
+    "presenting": "Insomnia (difficulty initiating/maintaining sleep)",
+    "group": "sleep",
+    "overview": "Determine whether insomnia is due to a substance/medication, another sleep-wake disorder (e.g., a breathing-related or circadian disorder), or a coexisting mental disorder, or whether it is a persistent, independent insomnia disorder. DSM-5 allows insomnia disorder to be diagnosed alongside comorbid conditions when it is an independent focus of treatment.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is the insomnia due to the physiological effects of a substance/medication (including caffeine, withdrawal)?", "yes": { "outcome": "Substance/Medication-Induced Sleep Disorder", "diagnoses": [{ "name": "Substance/Medication-Induced Sleep Disorder", "seeTree": "2.26" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Is it explained by another sleep-wake disorder (e.g., breathing-related, circadian rhythm, restless legs)?", "yes": { "outcome": "The specific sleep-wake disorder", "diagnoses": [{ "name": "Breathing-Related / Circadian Rhythm / Restless Legs / other sleep disorder" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Is it due to another medical condition (e.g., pain, nocturia)?", "yes": { "outcome": "Insomnia related to another medical condition", "diagnoses": [{ "name": "Sleep disturbance due to another medical condition", "seeTree": "2.29" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Does the insomnia occur only during and is fully accounted for by another mental disorder (e.g., MDD, GAD)?", "yes": { "outcome": "Sleep disturbance as a feature of the underlying disorder", "kind": "refer", "diagnoses": [{ "name": "Major Depressive Disorder / Generalized Anxiety Disorder", "table": "3.4.1", "seeTree": "2.10" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Is there dissatisfaction with sleep quantity/quality ≥3 nights/week for ≥3 months with daytime impairment (independent focus)?", "yes": { "outcome": "Insomnia Disorder", "diagnoses": [{ "name": "Insomnia Disorder", "table": "3.11.1" }] }, "no": { "outcome": "Situational/transient sleep difficulty — not a disorder", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.20",
+    "slug": "hypersomnolence",
+    "title": "Hypersomnolence",
+    "presenting": "Hypersomnolence (excessive sleepiness)",
+    "group": "sleep",
+    "overview": "Excessive daytime sleepiness can arise from insufficient sleep, substances, other sleep disorders (notably narcolepsy and breathing-related sleep disorder), medical conditions, and mood disorders. Cataplexy, sleep paralysis, and hypnagogic hallucinations point specifically to narcolepsy.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is the hypersomnolence due to the physiological effects of a substance/medication?", "yes": { "outcome": "Substance/Medication-Induced Sleep Disorder", "diagnoses": [{ "name": "Substance/Medication-Induced Sleep Disorder", "seeTree": "2.26" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Is there cataplexy and/or evidence of hypocretin deficiency / characteristic REM findings?", "yes": { "outcome": "Narcolepsy", "diagnoses": [{ "name": "Narcolepsy" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Is it explained by a breathing-related sleep disorder (e.g., obstructive sleep apnea) or another sleep disorder?", "yes": { "outcome": "Breathing-Related Sleep Disorder / other sleep disorder", "diagnoses": [{ "name": "Breathing-Related Sleep Disorder" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Is it due to another medical condition?", "yes": { "outcome": "Hypersomnolence due to another medical condition", "diagnoses": [{ "name": "Sleep disturbance due to another medical condition", "seeTree": "2.29" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Does it occur exclusively as part of another mental disorder (e.g., a Major Depressive Episode with hypersomnia)?", "yes": { "outcome": "Feature of the underlying mood disorder", "kind": "refer", "diagnoses": [{ "name": "Major Depressive Disorder", "table": "3.4.1", "seeTree": "2.10" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Is there self-reported excessive sleepiness despite ≥7 hours sleep, ≥3 times/week for ≥3 months, with impairment (independent focus)?", "yes": { "outcome": "Hypersomnolence Disorder", "diagnoses": [{ "name": "Hypersomnolence Disorder", "table": "3.11.2" }] }, "no": { "outcome": "Sleepiness due to insufficient sleep or situational factors — not a disorder", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.21",
+    "slug": "sexual-dysfunction-female",
+    "title": "Sexual Dysfunction in a Female",
+    "presenting": "Sexual dysfunction in a female",
+    "group": "sexual",
+    "overview": "Sexual dysfunctions require clinically significant distress and typically ≥6 months' duration. Exclude substance/medication effects, medical conditions, severe relationship distress, and other mental disorders that better account for the problem before diagnosing a primary sexual dysfunction, which is then specified by the phase/nature of the difficulty.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is the dysfunction due to the physiological effects of a substance/medication (e.g., SSRIs)?", "yes": { "outcome": "Substance/Medication-Induced Sexual Dysfunction", "diagnoses": [{ "name": "Substance/Medication-Induced Sexual Dysfunction", "table": "3.12.1", "seeTree": "2.26" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Is it fully explained by a general medical condition?", "yes": { "outcome": "Sexual dysfunction due to another medical condition (coded medically)", "diagnoses": [{ "name": "Sexual dysfunction attributable to a medical condition", "seeTree": "2.29" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Is it better explained by another mental disorder (e.g., major depressive disorder) or by severe relationship distress/other stressors?", "yes": { "outcome": "Diagnose the underlying disorder / note the stressor", "kind": "refer", "diagnoses": [{ "name": "Major Depressive Disorder", "table": "3.4.1", "seeTree": "2.10" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Is there reduced/absent sexual interest and arousal?", "yes": { "outcome": "Female Sexual Interest/Arousal Disorder", "diagnoses": [{ "name": "Female Sexual Interest/Arousal Disorder", "table": "3.12.1" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Is there marked delay/absence/reduced intensity of orgasm?", "yes": { "outcome": "Female Orgasmic Disorder", "diagnoses": [{ "name": "Female Orgasmic Disorder", "table": "3.12.1" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Is there marked pain, tension, or fear with vaginal penetration?", "yes": { "outcome": "Genito-Pelvic Pain/Penetration Disorder", "diagnoses": [{ "name": "Genito-Pelvic Pain/Penetration Disorder", "table": "3.12.1" }] }, "no": { "outcome": "Other Specified / Unspecified Sexual Dysfunction, or no disorder (if not distressing)", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.22",
+    "slug": "sexual-dysfunction-male",
+    "title": "Sexual Dysfunction in a Male",
+    "presenting": "Sexual dysfunction in a male",
+    "group": "sexual",
+    "overview": "As with female sexual dysfunctions, require clinically significant distress and typically ≥6 months' duration, and exclude substance/medication effects, medical conditions, severe relationship distress, and other mental disorders before diagnosing a primary male sexual dysfunction, specified by desire, arousal/erectile, or ejaculatory phase.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is the dysfunction due to the physiological effects of a substance/medication?", "yes": { "outcome": "Substance/Medication-Induced Sexual Dysfunction", "diagnoses": [{ "name": "Substance/Medication-Induced Sexual Dysfunction", "table": "3.12.1", "seeTree": "2.26" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Is it fully explained by a general medical condition (e.g., vascular, neurologic, endocrine)?", "yes": { "outcome": "Sexual dysfunction due to another medical condition", "diagnoses": [{ "name": "Sexual dysfunction attributable to a medical condition", "seeTree": "2.29" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Is it better explained by another mental disorder or severe relationship distress?", "yes": { "outcome": "Diagnose the underlying disorder / note the stressor", "kind": "refer", "diagnoses": [{ "name": "Major Depressive Disorder", "table": "3.4.1", "seeTree": "2.10" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Is there persistently deficient sexual/erotic thoughts and desire?", "yes": { "outcome": "Male Hypoactive Sexual Desire Disorder", "diagnoses": [{ "name": "Male Hypoactive Sexual Desire Disorder", "table": "3.12.1" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Is there difficulty obtaining/maintaining an erection or reduced erectile rigidity?", "yes": { "outcome": "Erectile Disorder", "diagnoses": [{ "name": "Erectile Disorder", "table": "3.12.1" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Is there ejaculation occurring sooner than desired (premature) or marked delay/absence (delayed)?", "yes": { "outcome": "Premature (Early) Ejaculation or Delayed Ejaculation", "diagnoses": [{ "name": "Premature (Early) Ejaculation / Delayed Ejaculation", "table": "3.12.1" }] }, "no": { "outcome": "Other Specified / Unspecified Sexual Dysfunction, or no disorder (if not distressing)", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.23",
+    "slug": "aggressive-behavior",
+    "title": "Aggressive Behavior",
+    "presenting": "Aggressive behavior",
+    "group": "impulse",
+    "overview": "Aggression is nonspecific. Rule out substance intoxication/withdrawal and medical causes (including delirium and neurocognitive disorders), then determine whether aggression is a feature of a mood, psychotic, developmental, trauma, or personality disorder, or a discrete impulse-control problem (intermittent explosive disorder, conduct disorder). Some aggression is purposeful and not a disorder.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is the aggression due to the physiological effects of a substance/medication (intoxication/withdrawal)?", "yes": { "outcome": "Substance-related etiology", "diagnoses": [{ "name": "Substance Intoxication/Withdrawal or Substance-Induced Disorder", "seeTree": "2.26" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Is it due to a general medical condition (including delirium, neurocognitive disorder, personality change)?", "yes": { "outcome": "Medical etiology", "diagnoses": [{ "name": "Delirium / Neurocognitive Disorder / Personality Change Due to Another Medical Condition", "table": "3.16.1", "seeTree": "2.29" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Does it occur only during manic or psychotic episodes?", "yes": { "outcome": "A mood or psychotic disorder", "kind": "refer", "diagnoses": [{ "name": "Bipolar I Disorder", "table": "3.3.1", "seeTree": "2.8" }, { "name": "Schizophrenia", "table": "3.2.1", "seeTree": "2.5" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "In youth: severe recurrent temper outbursts with persistent irritability between them (DMDD)?", "yes": { "outcome": "Disruptive Mood Dysregulation Disorder", "diagnoses": [{ "name": "Disruptive Mood Dysregulation Disorder", "table": "3.4.4" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Does it follow trauma with PTSD-associated irritability/aggression?", "yes": { "outcome": "PTSD", "diagnoses": [{ "name": "Posttraumatic Stress Disorder", "table": "3.7.1", "seeTree": "2.16" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Are there recurrent impulsive aggressive outbursts grossly out of proportion to provocation, not premeditated?", "yes": { "outcome": "Intermittent Explosive Disorder", "diagnoses": [{ "name": "Intermittent Explosive Disorder", "table": "3.14.2" }] }, "no": { "goto": "n7" } },
+      { "id": "n7", "question": "Is it part of a repetitive pattern of violating others' rights/norms (with a callous style)?", "yes": { "outcome": "Conduct Disorder (youth) or Antisocial Personality Disorder (adult)", "diagnoses": [{ "name": "Conduct Disorder", "table": "3.14.3" }, { "name": "Antisocial Personality Disorder", "table": "3.17.4" }] }, "no": { "goto": "n8" } },
+      { "id": "n8", "question": "Is it part of affective instability and impulsivity of borderline personality disorder?", "yes": { "outcome": "Borderline Personality Disorder", "diagnoses": [{ "name": "Borderline Personality Disorder", "table": "3.17.5" }] }, "no": { "outcome": "Purposeful/instrumental aggression or reaction not attributable to a mental disorder", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.24",
+    "slug": "impulsivity",
+    "title": "Impulsivity or Impulse-Control Problems",
+    "presenting": "Impulsivity or impulse-control problems",
+    "group": "impulse",
+    "overview": "Impulsivity appears across mania, ADHD, substance use, personality disorders, and the discrete impulse-control disorders (each defined by the specific impulsive behavior). Rule out substance/medical causes and episodic mood states, then match the behavior to its disorder (stealing → kleptomania, fire setting → pyromania, gambling → gambling disorder, hair pulling → trichotillomania, skin picking → excoriation).",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is the impulsivity due to a substance/medication or general medical condition?", "yes": { "outcome": "Substance/medical etiology", "diagnoses": [{ "name": "Substance-Induced or Medical cause", "seeTree": "2.26" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Does it occur only during manic/hypomanic episodes?", "yes": { "outcome": "A bipolar disorder", "kind": "refer", "diagnoses": [{ "name": "Bipolar I/II Disorder", "table": "3.3.1", "seeTree": "2.8" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Is there a persistent, cross-situational pattern of impulsivity with inattention/hyperactivity from childhood (ADHD)?", "yes": { "outcome": "Attention-Deficit/Hyperactivity Disorder", "diagnoses": [{ "name": "Attention-Deficit/Hyperactivity Disorder", "table": "3.1.4" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Is the specific behavior recurrent stealing of unneeded objects?", "yes": { "outcome": "Kleptomania", "diagnoses": [{ "name": "Kleptomania" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Is it deliberate fire setting with arousal/fascination?", "yes": { "outcome": "Pyromania", "diagnoses": [{ "name": "Pyromania" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Is it persistent, recurrent problematic gambling?", "yes": { "outcome": "Gambling Disorder", "diagnoses": [{ "name": "Gambling Disorder", "table": "3.15.2" }] }, "no": { "goto": "n7" } },
+      { "id": "n7", "question": "Is it recurrent hair pulling or skin picking with attempts to stop?", "yes": { "outcome": "Trichotillomania or Excoriation Disorder", "diagnoses": [{ "name": "Trichotillomania", "table": "3.6.4" }, { "name": "Excoriation (Skin-Picking) Disorder", "table": "3.6.5" }] }, "no": { "goto": "n8" } },
+      { "id": "n8", "question": "Is impulsivity part of a pervasive personality pattern (borderline, antisocial)?", "yes": { "outcome": "A personality disorder", "kind": "refer", "diagnoses": [{ "name": "Borderline Personality Disorder", "table": "3.17.5" }, { "name": "Antisocial Personality Disorder", "table": "3.17.4" }] }, "no": { "outcome": "Impulsivity not attributable to a specific disorder — reassess context", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.25",
+    "slug": "self-injury",
+    "title": "Self-Injury or Self-Mutilation",
+    "presenting": "Self-injury or self-mutilation",
+    "group": "impulse",
+    "overview": "Non-suicidal self-injury must be distinguished from suicidal behavior (see the suicidal ideation tree) and understood in its diagnostic context. Self-injury occurs with borderline personality disorder, in response to command hallucinations or delusions, in the context of stereotypies (intellectual disability, autism), and as a stress-related behavior. Always assess suicide risk in parallel.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is the self-injury intended to end one's life (suicidal)?", "yes": { "outcome": "Assess as suicidal behavior", "kind": "refer", "diagnoses": [{ "name": "See Suicidal Ideation or Behavior tree", "seeTree": "2.11" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Is it driven by psychotic symptoms (command hallucinations, delusions)?", "yes": { "outcome": "A psychotic disorder", "kind": "refer", "diagnoses": [{ "name": "Schizophrenia Spectrum / Other Psychotic Disorder", "table": "3.2.1", "seeTree": "2.5" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Is it due to a substance/medication or general medical condition?", "yes": { "outcome": "Substance/medical etiology", "diagnoses": [{ "name": "Substance-Induced or Medical cause", "seeTree": "2.29" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Is it repetitive, non-functional stereotyped self-injury with intellectual disability or autism?", "yes": { "outcome": "Stereotypic Movement Disorder, With Self-Injurious Behavior", "diagnoses": [{ "name": "Stereotypic Movement Disorder" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Does it occur in a pattern of affective instability, identity disturbance, and impulsivity?", "yes": { "outcome": "Borderline Personality Disorder", "diagnoses": [{ "name": "Borderline Personality Disorder", "table": "3.17.5" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Is it recurrent intentional self-injury to relieve negative feelings, without suicidal intent, and not better explained above?", "yes": { "outcome": "Non-Suicidal Self-Injury (condition for further study / Other Specified)", "diagnoses": [{ "name": "Non-Suicidal Self-Injury" }] }, "no": { "outcome": "Reassess motivation and context", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.26",
+    "slug": "excessive-substance-use",
+    "title": "Excessive Substance Use",
+    "presenting": "Excessive substance use",
+    "group": "substance",
+    "overview": "Two questions run in parallel: is there a substance use disorder (a maladaptive pattern with impaired control, social impairment, risky use, and pharmacological features), and are there substance-induced mental disorders (intoxication, withdrawal, or a substance-induced disorder such as psychotic, mood, or anxiety disorder)? This tree also anchors the substance-etiology decisions used throughout the other trees.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is there a problematic pattern of use with ≥2 of: impaired control, social impairment, risky use, tolerance/withdrawal, within 12 months?", "yes": { "outcome": "Substance Use Disorder (specify substance and severity)", "diagnoses": [{ "name": "Substance Use Disorder", "table": "3.15.1" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Are there reversible substance-specific symptoms from recent ingestion (intoxication)?", "yes": { "outcome": "Substance Intoxication", "diagnoses": [{ "name": "Substance Intoxication" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Are there substance-specific symptoms from cessation/reduction after heavy prolonged use (withdrawal)?", "yes": { "outcome": "Substance Withdrawal", "diagnoses": [{ "name": "Substance Withdrawal" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Are there prominent psychiatric symptoms (psychosis, mood, anxiety, sleep, sexual, cognitive) attributable to the substance and exceeding those expected of intoxication/withdrawal?", "yes": { "outcome": "Substance/Medication-Induced Mental Disorder", "diagnoses": [{ "name": "Substance/Medication-Induced Psychotic/Depressive/Bipolar/Anxiety/Sleep/Sexual/Neurocognitive Disorder" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Is the excessive use non-substance (behavioral), specifically persistent problematic gambling?", "yes": { "outcome": "Gambling Disorder", "diagnoses": [{ "name": "Gambling Disorder", "table": "3.15.2" }] }, "no": { "outcome": "Use present but not meeting disorder criteria — monitor / hazardous use (may warrant a Z code)", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.27",
+    "slug": "memory-loss",
+    "title": "Memory Loss",
+    "presenting": "Memory loss",
+    "group": "neurocognitive",
+    "overview": "Distinguish amnesia due to a medical condition (including delirium and neurocognitive disorders) or a substance from dissociative amnesia (psychogenic, often for autobiographical/traumatic information, without a neurological basis) and from normal age-related forgetfulness. The presence/absence of other cognitive deficits, level of consciousness, and the nature of the forgotten material guide the differential.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is the memory loss accompanied by a fluctuating disturbance of attention and awareness (delirium)?", "yes": { "outcome": "Delirium", "diagnoses": [{ "name": "Delirium", "table": "3.16.1" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Is it due to the physiological effects of a substance/medication (e.g., alcohol blackout, benzodiazepines)?", "yes": { "outcome": "Substance-Induced (e.g., substance-induced neurocognitive disorder)", "diagnoses": [{ "name": "Substance/Medication-Induced Neurocognitive Disorder", "seeTree": "2.26" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Is it due to another medical condition, and accompanied by decline in memory (± other cognitive domains)?", "yes": { "outcome": "Major or Mild Neurocognitive Disorder Due to Another Medical Condition", "diagnoses": [{ "name": "Major or Mild Neurocognitive Disorder", "table": "3.16.2", "seeTree": "2.29" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Is there an inability to recall important autobiographical information (often stressful/traumatic), too extensive for ordinary forgetting, without a neurological cause?", "yes": { "outcome": "Dissociative Amnesia", "diagnoses": [{ "name": "Dissociative Amnesia", "table": "3.8.1" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Does the memory complaint occur only during a mood, anxiety, or psychotic disorder (e.g., poor concentration in depression)?", "yes": { "outcome": "Feature of the underlying disorder", "kind": "refer", "diagnoses": [{ "name": "Major Depressive Disorder", "table": "3.4.1", "seeTree": "2.10" }] }, "no": { "outcome": "Age-related or normal forgetfulness — not a mental disorder", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.28",
+    "slug": "cognitive-impairment",
+    "title": "Cognitive Impairment",
+    "presenting": "Cognitive impairment (deficits in one or more cognitive domains)",
+    "group": "neurocognitive",
+    "overview": "Broad cognitive impairment requires separating delirium (acute, fluctuating, with attentional disturbance) from the neurocognitive disorders (acquired decline from a prior level), intellectual disability (onset in the developmental period), and cognitive complaints that are features of other mental disorders (e.g., pseudodementia of depression). Establish onset, course, and whether consciousness is clear.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is there an acute, fluctuating disturbance of attention and awareness developing over hours to days (delirium)?", "yes": { "outcome": "Delirium", "diagnoses": [{ "name": "Delirium", "table": "3.16.1" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Is it due to the physiological effects of a substance/medication?", "yes": { "outcome": "Substance/Medication-Induced Neurocognitive Disorder", "diagnoses": [{ "name": "Substance/Medication-Induced Neurocognitive Disorder", "seeTree": "2.26" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Do the deficits reflect intellectual and adaptive deficits with onset during the developmental period (not a decline)?", "yes": { "outcome": "Intellectual Disability", "diagnoses": [{ "name": "Intellectual Disability", "table": "3.1.1" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Is there acquired decline from a previous level in ≥1 cognitive domain (memory, executive, attention, language, perceptual-motor, social cognition)?", "yes": { "goto": "n5" }, "no": { "goto": "n6" } },
+      { "id": "n5", "question": "Do the deficits interfere with independence in everyday activities (vs. preserved independence with greater effort)?", "yes": { "outcome": "Major Neurocognitive Disorder", "diagnoses": [{ "name": "Major Neurocognitive Disorder", "table": "3.16.2" }] }, "no": { "outcome": "Mild Neurocognitive Disorder", "diagnoses": [{ "name": "Mild Neurocognitive Disorder", "table": "3.16.2" }] } },
+      { "id": "n6", "question": "Are the cognitive complaints occurring only during another mental disorder (e.g., depression, psychosis)?", "yes": { "outcome": "Cognitive symptoms as a feature of the underlying disorder", "kind": "refer", "diagnoses": [{ "name": "Major Depressive Disorder", "table": "3.4.1", "seeTree": "2.10" }] }, "no": { "outcome": "No neurocognitive disorder — reassess or monitor", "kind": "no-disorder" } }
+    ]
+  },
+  {
+    "id": "2.29",
+    "slug": "etiological-medical-conditions",
+    "title": "Etiological Medical Conditions",
+    "presenting": "Psychiatric symptoms possibly due to another medical condition",
+    "group": "etiological",
+    "overview": "When a general medical condition is judged to physiologically cause the psychiatric symptoms, DSM-5 provides a family of 'Due to Another Medical Condition' diagnoses selected by the predominant symptom. This tree routes an established medical etiology to the correct disorder by presenting symptom.",
+    "start": "n1",
+    "nodes": [
+      { "id": "n1", "question": "Is there a fluctuating disturbance of attention/awareness with acute onset (delirium)?", "yes": { "outcome": "Delirium Due to Another Medical Condition", "diagnoses": [{ "name": "Delirium", "table": "3.16.1" }] }, "no": { "goto": "n2" } },
+      { "id": "n2", "question": "Is there acquired cognitive decline (major/mild)?", "yes": { "outcome": "Major or Mild Neurocognitive Disorder Due to Another Medical Condition", "diagnoses": [{ "name": "Major or Mild Neurocognitive Disorder", "table": "3.16.2" }] }, "no": { "goto": "n3" } },
+      { "id": "n3", "question": "Are psychotic symptoms (delusions/hallucinations) predominant?", "yes": { "outcome": "Psychotic Disorder Due to Another Medical Condition", "diagnoses": [{ "name": "Psychotic Disorder Due to Another Medical Condition" }] }, "no": { "goto": "n4" } },
+      { "id": "n4", "question": "Is elevated/expansive/irritable mood with increased energy predominant?", "yes": { "outcome": "Bipolar and Related Disorder Due to Another Medical Condition", "diagnoses": [{ "name": "Bipolar and Related Disorder Due to Another Medical Condition" }] }, "no": { "goto": "n5" } },
+      { "id": "n5", "question": "Is depressed mood or anhedonia predominant?", "yes": { "outcome": "Depressive Disorder Due to Another Medical Condition", "diagnoses": [{ "name": "Depressive Disorder Due to Another Medical Condition" }] }, "no": { "goto": "n6" } },
+      { "id": "n6", "question": "Is anxiety (panic/worry) predominant?", "yes": { "outcome": "Anxiety Disorder Due to Another Medical Condition", "diagnoses": [{ "name": "Anxiety Disorder Due to Another Medical Condition" }] }, "no": { "goto": "n7" } },
+      { "id": "n7", "question": "Are obsessive-compulsive/related symptoms predominant?", "yes": { "outcome": "Obsessive-Compulsive and Related Disorder Due to Another Medical Condition", "diagnoses": [{ "name": "OCD and Related Disorder Due to Another Medical Condition" }] }, "no": { "goto": "n8" } },
+      { "id": "n8", "question": "Is there a persistent personality change from baseline attributable to the medical condition?", "yes": { "outcome": "Personality Change Due to Another Medical Condition", "diagnoses": [{ "name": "Personality Change Due to Another Medical Condition", "table": "3.17.11" }] }, "no": { "goto": "n9" } },
+      { "id": "n9", "question": "Are catatonic features predominant?", "yes": { "outcome": "Catatonic Disorder Due to Another Medical Condition", "diagnoses": [{ "name": "Catatonic Disorder Due to Another Medical Condition", "table": "3.2.5", "seeTree": "2.7" }] }, "no": { "outcome": "If symptoms don't fit a specific category: Other Specified/Unspecified Mental Disorder Due to Another Medical Condition", "kind": "no-disorder" } }
+    ]
+  }
+]

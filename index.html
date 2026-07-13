@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PSYSDD — Psychiatric Differential Diagnosis Decision Guide</title>
+  <meta name="description" content="An interactive, symptom-driven decision-support framework for DSM-5 psychiatric differential diagnosis: a six-step method, 29 symptom decision trees, and 66 disorder differential tables." />
+  <link rel="stylesheet" href="app/css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%A0%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#/" data-nav>
+        <span class="brand-mark" aria-hidden="true">🧠</span>
+        <span class="brand-text"><strong>PSYSDD</strong><small>Psychiatric Differential Diagnosis</small></span>
+      </a>
+      <nav class="mainnav">
+        <a href="#/" data-nav>Home</a>
+        <a href="#/framework" data-nav>Framework</a>
+        <a href="#/trees" data-nav>Decision Trees</a>
+        <a href="#/tables" data-nav>Differential Tables</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" title="Toggle light/dark" aria-label="Toggle theme">◐</button>
+    </div>
+  </header>
+
+  <div class="searchbar">
+    <div class="wrap">
+      <input id="globalSearch" type="search" placeholder="Search symptoms, disorders, or decision points…" autocomplete="off" />
+      <div id="searchResults" class="search-results" hidden></div>
+    </div>
+  </div>
+
+  <main id="app" class="wrap" aria-live="polite"><div class="loading">Loading…</div></main>
+
+  <footer class="sitefooter">
+    <div class="wrap">
+      <p class="disclaimer"><strong>Clinical decision support, not a diagnostic authority.</strong> This tool summarizes DSM-5 differential-diagnosis logic to support — never replace — clinical judgment and a full review of the DSM-5 criteria. It does not establish a diagnosis or a treatment plan. See <a href="#/about" data-nav>About &amp; disclaimer</a>.</p>
+      <p class="attrib">Diagnostic categories and methodology derive from DSM-5 (APA, 2013) and the <em>DSM-5 Handbook of Differential Diagnosis</em> (First, 2014). All text here is an original synthesis; no source text is reproduced. Not affiliated with or endorsed by the American Psychiatric Association.</p>
+    </div>
+  </footer>
+
+  <script src="app/js/app.js"></script>
+</body>
+</html>
