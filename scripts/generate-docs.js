@@ -237,6 +237,10 @@ ${framework.intro}
   }
   md += `---\n\n## Attribution\n\n${meta.attribution}\n\nPSYSDD is independent and not affiliated with or endorsed by the American Psychiatric Association.\n`;
   fs.writeFileSync(path.join(KDIR, "psysdd-knowledge-pack.md"), md, "utf8");
+  // Keep a self-contained copy inside the drop-in skill package so it stays in sync.
+  const SREF = path.join(ROOT, "skill", "references");
+  ensureDir(SREF);
+  fs.writeFileSync(path.join(SREF, "psysdd-knowledge-pack.md"), md, "utf8");
 }
 function DATA_disclaimer() {
   return "This pack summarizes differentiating features only; it omits full criteria, durations, and severity thresholds. It does not diagnose and does not replace clinical judgment or the full DSM-5 text.";

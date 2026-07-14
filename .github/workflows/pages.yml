@@ -27,9 +27,9 @@ jobs:
       - name: Ensure generated docs & knowledge pack are up to date with data
         run: |
           node scripts/generate-docs.js
-          if ! git diff --quiet -- docs knowledge/psysdd-knowledge-pack.md; then
+          if ! git diff --quiet -- docs knowledge/psysdd-knowledge-pack.md skill/references/psysdd-knowledge-pack.md; then
             echo "::error::Generated files are out of date. Run 'node scripts/generate-docs.js' and commit the result."
-            git --no-pager diff --stat -- docs knowledge/psysdd-knowledge-pack.md
+            git --no-pager diff --stat -- docs knowledge/psysdd-knowledge-pack.md skill/references/psysdd-knowledge-pack.md
             exit 1
           fi
 
