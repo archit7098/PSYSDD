@@ -11,4 +11,4 @@
 | [Major Depressive Disorder](3-4-1.md) | Reduced going out reflects anhedonia/amotivation rather than fear of escape difficulty. |
 
 ---
-_Distinctions summarize differentiating features only. Confirm the full DSM-5 criteria for each disorder considered._
+_Original synthesis of differentiating features only — no DSM criteria text reproduced. Confirm the official DSM-5-TR criteria for each disorder considered (cite "per DSM-5-TR criteria for …"). Decision support for clinician reference/research use — not a diagnostic substitute._

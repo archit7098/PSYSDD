@@ -285,12 +285,15 @@
       h("strong", {}, ["Medical disclaimer. "]),
       "PSYSDD is an educational decision-support reference intended for qualified clinicians and trainees. It summarizes DSM-5 differential-diagnosis logic and does not itself establish any diagnosis. It is not a substitute for clinical judgment, a complete evaluation, or the full text of DSM-5, and it must not be used as the sole basis for any diagnostic or treatment decision. No clinician–patient relationship is created by its use."
     ]));
+    if (DATA.meta.intendedUse) app.appendChild(h("div", { class: "callout info" }, [ h("strong", {}, ["Intended use. "]), DATA.meta.intendedUse ]));
     app.appendChild(h("div", { class: "prose" }, [
       h("h2", {}, ["What this is"]),
       h("p", {}, [DATA.meta.description]),
-      h("h2", {}, ["Sources & attribution"]),
+      h("h2", {}, ["Sources, attribution & citation"]),
       h("p", {}, [DATA.meta.attribution]),
-      h("p", {}, ["PSYSDD is an independent, open project and is not affiliated with, authorized by, or endorsed by the American Psychiatric Association or the author of the DSM-5 Handbook of Differential Diagnosis."]),
+      DATA.meta.citationStyle ? h("p", {}, [h("strong", {}, ["Citing criteria: "]), DATA.meta.citationStyle]) : null,
+      h("h2", {}, ["Independence & trademarks"]),
+      h("p", {}, [DATA.meta.nonAffiliation || "PSYSDD is an independent, open project and is not affiliated with, authorized by, or endorsed by the American Psychiatric Association."]),
       h("h2", {}, ["Coverage"]),
       h("p", {}, [String(DATA.trees.length) + " symptom decision trees and " + DATA.tables.length + " disorder differential tables, plus the six-step diagnostic method."]),
       h("h2", {}, ["Contributing & corrections"]),

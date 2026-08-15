@@ -8,7 +8,9 @@ _A single, self-contained reference for the PSYSDD psychiatric differential-diag
 3. On reaching a candidate diagnosis, open that disorder's **differential table** and show how the main competitors are excluded.
 4. State what additional history, exam, or investigations would change the conclusion, and note that the **full DSM-5 criteria** must be confirmed. Never present output as a definitive diagnosis.
 
-> **Educational decision support, not a diagnostic authority.** This pack summarizes differentiating features only; it omits full criteria, durations, and severity thresholds. It does not diagnose and does not replace clinical judgment or the full DSM-5 text.
+> **For clinician reference and research/educational use only — not a diagnostic substitute.** This pack summarizes differentiating features only; it omits full criteria, durations, and severity thresholds. It does not diagnose and does not replace clinical judgment or the full DSM-5 text.
+>
+> **Independent project — not affiliated with, endorsed by, or authorized by the American Psychiatric Association.** All text below is an original synthesis in the authors' own clinical language; no DSM criteria text is reproduced. Where exact criteria are needed, cite them ("per DSM-5-TR criteria for …") and confirm against the official DSM-5-TR text. "DSM-5"/"DSM-5-TR" are APA trademarks.
 
 ---
 
@@ -1678,8 +1680,12 @@ When a general medical condition is judged to physiologically cause the psychiat
 
 ---
 
-## Attribution
+## Intended use
 
-Diagnostic categories, criteria concepts, and the overall differential-diagnosis methodology derive from DSM-5 (American Psychiatric Association, 2013) and the DSM-5 Handbook of Differential Diagnosis by Michael B. First, M.D. (American Psychiatric Publishing, 2014). All explanatory text in this repository is an original synthesis written for this project; no book text is reproduced verbatim.
+For clinician reference and research/educational use only. This is decision-support material, not a diagnostic substitute, not a medical device, and not individualized medical advice.
 
-PSYSDD is independent and not affiliated with or endorsed by the American Psychiatric Association.
+## Attribution & copyright
+
+The diagnostic categories and the differential-diagnosis methodology reflected here derive from DSM-5 / DSM-5-TR (American Psychiatric Association, 2013/2022) and the DSM-5 Handbook of Differential Diagnosis by Michael B. First, M.D. (American Psychiatric Publishing, 2014). Diagnostic logic — symptom clustering, decision pathways, and differential relationships — is not itself copyrightable; the specific wording and structure of DSM criteria is. Accordingly, every explanatory text field in this project is an original synthesis written in the authors' own clinical language, and NO DSM criteria text is reproduced. Where exact criteria (symptom counts, durations, severity thresholds, exclusions) are needed, confirm them against the official DSM-5-TR text.
+
+PSYSDD is an independent, unofficial project. It is NOT affiliated with, endorsed by, authorized by, or sponsored by the American Psychiatric Association (APA) or the author of the DSM-5 Handbook of Differential Diagnosis. 'DSM', 'DSM-5', and 'DSM-5-TR' are trademarks of the American Psychiatric Association.

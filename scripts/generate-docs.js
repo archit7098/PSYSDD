@@ -113,7 +113,7 @@ function genTrees() {
     if (tree.overview) md += `> ${tree.overview}\n\n`;
     md += `## Decision flow\n\n${treeMermaid(tree)}\n\n`;
     md += `## Decision points\n\n${treeOutline(tree)}\n`;
-    md += `\n---\n_Summarizes differentiating features only. Confirm against the full DSM-5 criteria. See [the six-step method](../framework.md)._\n`;
+    md += `\n---\n_Original synthesis of differentiating features only — no DSM criteria text reproduced. Confirm against the official DSM-5-TR criteria (e.g. "per DSM-5-TR criteria for …"). See [the six-step method](../framework.md). Decision support for clinician reference/research use — not a diagnostic substitute._\n`;
     write(`trees/${tree.slug}.md`, md);
   }
 }
@@ -139,7 +139,7 @@ function genTables() {
       const name = d.table && tableById[d.table] ? `[${d.disorder}](${slug(d.table)}.md)` : d.disorder;
       md += `| ${esc(name)} | ${esc(d.distinction)} |\n`;
     }
-    md += `\n---\n_Distinctions summarize differentiating features only. Confirm the full DSM-5 criteria for each disorder considered._\n`;
+    md += `\n---\n_Original synthesis of differentiating features only — no DSM criteria text reproduced. Confirm the official DSM-5-TR criteria for each disorder considered (cite "per DSM-5-TR criteria for …"). Decision support for clinician reference/research use — not a diagnostic substitute._\n`;
     write(`tables/${t.slug}.md`, md);
   }
 }
@@ -199,7 +199,9 @@ _A single, self-contained reference for the PSYSDD psychiatric differential-diag
 3. On reaching a candidate diagnosis, open that disorder's **differential table** and show how the main competitors are excluded.
 4. State what additional history, exam, or investigations would change the conclusion, and note that the **full DSM-5 criteria** must be confirmed. Never present output as a definitive diagnosis.
 
-> **Educational decision support, not a diagnostic authority.** ${DATA_disclaimer()}
+> **For clinician reference and research/educational use only — not a diagnostic substitute.** ${DATA_disclaimer()}
+>
+> **Independent project — not affiliated with, endorsed by, or authorized by the American Psychiatric Association.** All text below is an original synthesis in the authors' own clinical language; no DSM criteria text is reproduced. Where exact criteria are needed, cite them ("per DSM-5-TR criteria for …") and confirm against the official DSM-5-TR text. "DSM-5"/"DSM-5-TR" are APA trademarks.
 
 ---
 
@@ -235,7 +237,7 @@ ${framework.intro}
       md += `\n`;
     }
   }
-  md += `---\n\n## Attribution\n\n${meta.attribution}\n\nPSYSDD is independent and not affiliated with or endorsed by the American Psychiatric Association.\n`;
+  md += `---\n\n## Intended use\n\n${meta.intendedUse}\n\n## Attribution & copyright\n\n${meta.attribution}\n\n${meta.nonAffiliation}\n`;
   fs.writeFileSync(path.join(KDIR, "psysdd-knowledge-pack.md"), md, "utf8");
   // Keep a self-contained copy inside the drop-in skill package so it stays in sync.
   const SREF = path.join(ROOT, "skill", "references");

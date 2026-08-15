@@ -1,6 +1,8 @@
 # Medical & Legal Disclaimer
 
-**PSYSDD is an educational decision-support reference for qualified clinicians and trainees. It is not a medical device, not a diagnostic authority, and not a source of individualized medical advice.**
+**PSYSDD is for clinician reference and research/educational use only — not a diagnostic substitute.** It is a decision-support reference for qualified clinicians and trainees. It is not a medical device, not a diagnostic authority, and not a source of individualized medical advice.
+
+**Independence:** PSYSDD is an independent, unofficial project. It is **not affiliated with, endorsed by, authorized by, or sponsored by** the American Psychiatric Association (APA) or the author of the DSM-5 Handbook of Differential Diagnosis. "DSM", "DSM-5", and "DSM-5-TR" are trademarks of the APA.
 
 ## Not a substitute for clinical judgment
 

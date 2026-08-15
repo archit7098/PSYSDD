@@ -3,7 +3,9 @@
 **An interactive, DSM-5–based decision-support framework for psychiatric differential diagnosis.**
 Built to be shared as a link: a colleague opens it, starts from a presenting symptom, and works through the differential to a set of candidate diagnoses — then confirms with a head-to-head disorder comparison.
 
-> ⚕️ **Educational decision support, not a diagnostic authority.** This tool summarizes DSM-5 differential-diagnosis *logic* to support clinical reasoning. It does **not** establish a diagnosis, does **not** replace clinical judgment or the full DSM-5 text, and must **not** be the sole basis for any clinical decision. See [DISCLAIMER.md](DISCLAIMER.md).
+> ⚕️ **For clinician reference and research/educational use only — not a diagnostic substitute.** This tool summarizes DSM-5 differential-diagnosis *logic* to support clinical reasoning. It does **not** establish a diagnosis, does **not** replace clinical judgment or the current DSM-5-TR criteria, and must **not** be the sole basis for any clinical decision. See [DISCLAIMER.md](DISCLAIMER.md).
+>
+> 🏛️ **Independent project — NOT affiliated with, endorsed by, or authorized by the American Psychiatric Association (APA).** All text is an original synthesis in the authors' own clinical language; **no DSM criteria text is reproduced**. "DSM", "DSM-5", and "DSM-5-TR" are APA trademarks. See [COPYRIGHT.md](COPYRIGHT.md).
 
 ---
 
@@ -69,11 +71,13 @@ psysdd/
 
 **A differential table** names a `target` disorder and lists `differentials` — each a competing `disorder` plus the `distinction` that separates it from the target. See [`data/schema/differential-table.schema.json`](data/schema/differential-table.schema.json).
 
-## Sources & attribution
+## Sources, attribution & copyright
 
-The diagnostic categories and the differential-diagnosis methodology derive from **DSM-5** (American Psychiatric Association, 2013) and the **DSM-5 Handbook of Differential Diagnosis** by Michael B. First, M.D. (American Psychiatric Publishing, 2014). All explanatory text in this repository is an **original synthesis** written for this project — no source text is reproduced.
+The diagnostic categories and the differential-diagnosis methodology reflected here derive from **DSM-5 / DSM-5-TR** (American Psychiatric Association, 2013/2022) and the **DSM-5 Handbook of Differential Diagnosis** by Michael B. First, M.D. (American Psychiatric Publishing, 2014).
 
-PSYSDD is an independent, open project. It is **not affiliated with, authorized by, or endorsed by** the American Psychiatric Association or the author of the Handbook.
+Diagnostic *logic* — symptom clustering, decision pathways, and differential relationships — is not copyrightable; the specific *wording and structure* of DSM criteria is. Accordingly, all explanatory text here is an **original synthesis in the authors' own clinical language, and no DSM criteria text is reproduced.** Criteria are referenced by citation (e.g. "per DSM-5-TR criteria for…"), not reproduction. Confirm exact criteria against the official DSM-5-TR text.
+
+PSYSDD is an independent, unofficial, open project. It is **not affiliated with, authorized by, endorsed by, or sponsored by** the American Psychiatric Association or the author of the Handbook. "DSM", "DSM-5", and "DSM-5-TR" are trademarks of the APA. Full details in [COPYRIGHT.md](COPYRIGHT.md) and [DISCLAIMER.md](DISCLAIMER.md).
 
 ## Contributing
 
